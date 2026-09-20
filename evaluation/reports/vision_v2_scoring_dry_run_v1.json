@@ -1,0 +1,82 @@
+{
+  "scoring_schema_version": "vision-three-state-v1",
+  "manifest_sha256": "b1a811124462f826163d673253466461123166302da1a8469a34389f749d37a6",
+  "validation": {
+    "total_cases": 10,
+    "images_present": 10,
+    "missing_images": 0,
+    "reviewed": 10,
+    "benchmark_ready": 10,
+    "duplicate_images": 0,
+    "errors": [],
+    "warnings": [
+      "v2_development_002: site unknown; independence cannot be guaranteed",
+      "v2_development_005: site unknown; independence cannot be guaranteed",
+      "v2_development_006: site unknown; independence cannot be guaranteed",
+      "v2_development_007: site unknown; independence cannot be guaranteed",
+      "v2_development_008: site unknown; independence cannot be guaranteed",
+      "v2_development_009: site unknown; independence cannot be guaranteed"
+    ],
+    "frozen": false
+  },
+  "eligibility": {
+    "scoring_schema_version": "vision-three-state-v1",
+    "cases": 10,
+    "per_class": {
+      "missing_ppe": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 0
+      },
+      "working_at_height": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "unprotected_edge": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "unsafe_scaffolding": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "electrical_hazard": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 2
+      },
+      "housekeeping": {
+        "evaluable_count": 9,
+        "indeterminate_count": 1,
+        "positive_support": 2
+      }
+    },
+    "confirmed_safe_case_ids": [
+      "v2_development_001",
+      "v2_development_004",
+      "v2_development_006"
+    ],
+    "unknown_status_case_ids": [
+      "v2_development_008"
+    ],
+    "full_exact_match_case_ids": [
+      "v2_development_001",
+      "v2_development_002",
+      "v2_development_003",
+      "v2_development_004",
+      "v2_development_005",
+      "v2_development_006",
+      "v2_development_007",
+      "v2_development_009",
+      "v2_development_010"
+    ]
+  },
+  "prediction_metrics": null,
+  "reason": "No V2 prediction cache supplied; eligibility only, synthetic metrics confined to tests.",
+  "tests_passed": 94,
+  "tests_failed": 0,
+  "model_api_calls": 0
+}

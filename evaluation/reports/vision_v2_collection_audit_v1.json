@@ -1,0 +1,224 @@
+{
+  "audit_date": "2026-09-18",
+  "scope": [
+    "evaluation",
+    "backend/uploads",
+    "backend/data",
+    "frontend/public",
+    "docs"
+  ],
+  "excluded_scope": "Installed dependencies and build caches; no external/personal image libraries searched",
+  "local_image_files": 29,
+  "historical_matches": 20,
+  "eligible_new_images": 0,
+  "local_exact_duplicate_groups": [],
+  "new_split_images": 0,
+  "new_cross_split_duplicates": 0,
+  "leakage_review_complete": false,
+  "limitation": "No new images registered; zero duplicates across empty splits does not establish scene independence.",
+  "inventory": [
+    {
+      "path": "evaluation/fixtures/live_smoke/01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/live_smoke/02_obvious_hazard.jpg",
+      "sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/live_smoke/03_ambiguous.jpg",
+      "sha256": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/live_smoke/04_multi_hazard.jpg",
+      "sha256": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/01.jpg",
+      "sha256": "45c1659018c5e5971e73d80f6f0c303b2d42965b020334e444663d5c3775408b",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/02.jpg",
+      "sha256": "876b591b9ce458004875fce6b84f5b18cecef36e501b8564fa85597c01483d5c",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/03.jpg",
+      "sha256": "47a6b33dc62ce27bc4922e8ba6375cd30dda64f74059e73962b9a9bb15155538",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/04.jpg",
+      "sha256": "f0106a6b3da059e1fd42c38fd3afa336df18bb702aef7596bd87dbd4b479bd61",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/05.jpg",
+      "sha256": "3450154516d5003d28d6441c4d39020d5f6cafcf34f57b1952bca1de8a10c1a4",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/06.jpg",
+      "sha256": "88c113d4ff8c37031eb372967808f1822e0ed97e69f7ea1cf677db278fc55b09",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/07.jpg",
+      "sha256": "bd5c4ebf6933269c1b6efab51f6d2e0faeaa90ccd17550e375523e550960c77f",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/08.jpg",
+      "sha256": "698c424974350e9c090bd24d8fbbf5fdfe204baf7456656ab63d57e13e296277",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/09.jpg",
+      "sha256": "9ed66ff6423ef8df7c41addeba554d31860a804f06fc635f3988778c70eb0bf6",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/10.jpg",
+      "sha256": "f909dc1ed25109dcfd678305a3459b012813d10193cd4bb62861b37654387135",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/11.jpg",
+      "sha256": "6ea2074a087d0ee314b2d329c0267b0102ceded263f697f219d875abbdfe46fe",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/12.jpg",
+      "sha256": "4d0f4fc16202977e5861db1cd72e6d5522fab8b0fc77523e64cceee6e3c5941f",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/13.jpg",
+      "sha256": "a462f069ec6ec26840e615c16d7be72d1315ab982c38134314f976f9b87d54f5",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/14.jpg",
+      "sha256": "1e263c9a442de8dac19e34dfe51051be6d81ef99f822478a928191153f9c017a",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/15.jpg",
+      "sha256": "ac036db5ba7df8c5770d47b223ad18676ae2a6166e9803dc4b29b0e81208bc7f",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "evaluation/fixtures/vision_pilot/16.jpg",
+      "sha256": "22b5753c9db4e1b8fb4881be9659efac43db5b0ab7de89bd1dcc89aab043c78a",
+      "historical_match": true,
+      "eligible_new_image": false,
+      "exclusion_reason": "Historical pilot photograph"
+    },
+    {
+      "path": "backend/data/labeling-ui.png",
+      "sha256": "80c208c37745534e9eae1ab2d2c6f449baf93cda6e7d8f1e87070323e4cc33d7",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "backend/data/knowledge/electrical-layout.png",
+      "sha256": "1b47c5854bdc2143a0d5d2fc0577eecb3b346982bddafb078f36912fc696fdf3",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "backend/data/knowledge/handbook-layout.png",
+      "sha256": "19c5573cbdc132caae65849207ac8e3ac0618b475928625380d52832494f6849",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "backend/data/knowledge/height-layout.png",
+      "sha256": "a1913b2eb08d2cde3b61b55eb497a9a6d572efaf9c07765e07198ce4a7c79b64",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "docs/screenshots/closed-case.png",
+      "sha256": "d2da67425359b70897789d4435347aecaa8be4c0481a1d22799fecd7381ab1a0",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "docs/screenshots/dashboard.png",
+      "sha256": "79268c0d3416e087fc2e502f9079d62bd89c4e70eb007a0a78d6249d95fff419",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "docs/screenshots/findings.png",
+      "sha256": "ec600c8d142dc1dad47d67abe7b3df3e2ed69517ea638afc7c422b4a3f8e1a23",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "docs/screenshots/inspection.png",
+      "sha256": "c3e527d18d83cd63fe16affe2900f8c5ff5e9370c56a50f5ce811ced2773946b",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    },
+    {
+      "path": "docs/screenshots/mobile-knowledge.png",
+      "sha256": "2b21dc05224438589f787818b2636f6154c6012ac345441d6275e04245f741c6",
+      "historical_match": false,
+      "eligible_new_image": false,
+      "exclusion_reason": "Ancillary project asset; not an approved new evaluation photograph with verified provenance"
+    }
+  ]
+}

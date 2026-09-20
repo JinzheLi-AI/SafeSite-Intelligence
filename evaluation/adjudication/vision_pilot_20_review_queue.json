@@ -1,0 +1,1051 @@
+{
+  "schema_version": "vision-pilot-review-queue-v1",
+  "protocol_version": "vision-label-protocol-v2.0-proposed",
+  "dataset_version": "vision-pilot-20-v1-frozen",
+  "source_manifest": "evaluation/datasets/vision_pilot_20.json",
+  "source_manifest_sha256": "14157204b8b9bd7941046563e9e162be25845e4ef0536608b311a6884635c116",
+  "initial_review_warning": "Facilitator-only queue: original labels and evidence can anchor reviewers. Do not show the raw JSON during the initial independent pass. No model predictions are included.",
+  "provenance": "20-image pilot: single primary reviewer, AI-assisted annotation discussion, not fully blind, no secondary adjudication; previous smoke images reused.",
+  "priority_case_count": 10,
+  "comparison_case_count": 10,
+  "total_pending_cases": 20,
+  "frozen_snapshot": "evaluation/adjudication/frozen_vision_pilot_20_v1",
+  "frozen_files_sha256": {
+    "evaluation/datasets/vision_pilot_20.json": "14157204b8b9bd7941046563e9e162be25845e4ef0536608b311a6884635c116",
+    "docs/VISION_ERROR_AUDIT.md": "d6926cbe10ebb0104d73d07dcfbf260fef07268205c74a760451c02ace62ed73",
+    "docs/VISION_LABELING_GUIDE.md": "1ffb93ecd38d7f1e18139bfd210826296c270c46e96d2caf140cc0d8df841f77",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/case_errors.json": "dccb409bb6ece174f94b89efbbe55303bc421a2b0a8cbc6a09a44bfd9d866283",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/error_analysis_notes.json": "9cce58b0b377548495d3644d1c0da5622d7983060eb43637d2679cbd3fd9491e",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/execution.lock": "6b86b273ff34fce19d6b804eff5a3f5747ada4eaa22f1d49c01e52ddb7875b4b",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/metrics.json": "20ca0ae96d6b5dc10b414194cbd17bd62c8484d6eb8bb7e0acd51827ac2dde96",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/raw_results.json": "33835c7402b00a800b23f2822a30a5ca35f1afb9f02caf52164ff020f2874347",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/summary.md": "866a8be5663f52837ddc130ebc9003e46b6ab57f4a85538f172353c450974a15",
+    "evaluation/reports/vision_openai_sol_20_20260918_01/verification.json": "245c2042f4b6eb521ae1df670a9b26f8c3986d334157ef663fb6c9aa044e4d46"
+  },
+  "original_images_sha256": {
+    "fixtures/live_smoke/01_safe.jpg": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+    "fixtures/live_smoke/02_obvious_hazard.jpg": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+    "fixtures/live_smoke/03_ambiguous.jpg": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6",
+    "fixtures/live_smoke/04_multi_hazard.jpg": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983",
+    "fixtures/vision_pilot/01.jpg": "45c1659018c5e5971e73d80f6f0c303b2d42965b020334e444663d5c3775408b",
+    "fixtures/vision_pilot/02.jpg": "876b591b9ce458004875fce6b84f5b18cecef36e501b8564fa85597c01483d5c",
+    "fixtures/vision_pilot/03.jpg": "47a6b33dc62ce27bc4922e8ba6375cd30dda64f74059e73962b9a9bb15155538",
+    "fixtures/vision_pilot/04.jpg": "f0106a6b3da059e1fd42c38fd3afa336df18bb702aef7596bd87dbd4b479bd61",
+    "fixtures/vision_pilot/05.jpg": "3450154516d5003d28d6441c4d39020d5f6cafcf34f57b1952bca1de8a10c1a4",
+    "fixtures/vision_pilot/06.jpg": "88c113d4ff8c37031eb372967808f1822e0ed97e69f7ea1cf677db278fc55b09",
+    "fixtures/vision_pilot/07.jpg": "bd5c4ebf6933269c1b6efab51f6d2e0faeaa90ccd17550e375523e550960c77f",
+    "fixtures/vision_pilot/08.jpg": "698c424974350e9c090bd24d8fbbf5fdfe204baf7456656ab63d57e13e296277",
+    "fixtures/vision_pilot/09.jpg": "9ed66ff6423ef8df7c41addeba554d31860a804f06fc635f3988778c70eb0bf6",
+    "fixtures/vision_pilot/10.jpg": "f909dc1ed25109dcfd678305a3459b012813d10193cd4bb62861b37654387135",
+    "fixtures/vision_pilot/11.jpg": "6ea2074a087d0ee314b2d329c0267b0102ceded263f697f219d875abbdfe46fe",
+    "fixtures/vision_pilot/12.jpg": "4d0f4fc16202977e5861db1cd72e6d5522fab8b0fc77523e64cceee6e3c5941f",
+    "fixtures/vision_pilot/13.jpg": "a462f069ec6ec26840e615c16d7be72d1315ab982c38134314f976f9b87d54f5",
+    "fixtures/vision_pilot/14.jpg": "1e263c9a442de8dac19e34dfe51051be6d81ef99f822478a928191153f9c017a",
+    "fixtures/vision_pilot/15.jpg": "ac036db5ba7df8c5770d47b223ad18676ae2a6166e9803dc4b29b0e81208bc7f",
+    "fixtures/vision_pilot/16.jpg": "22b5753c9db4e1b8fb4881be9659efac43db5b0ab7de89bd1dcc89aab043c78a"
+  },
+  "cases": [
+    {
+      "case_id": "case_001",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/live_smoke/01_safe.jpg",
+      "image_hash": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "Two workers are visibly wearing hard hats, and one worker is also wearing a high-visibility vest. No exposed edge, unsafe scaffolding condition, electrical hazard, obstructed access route, or other supported hazard can be confidently identified from the visible scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Two workers are visibly wearing hard hats, and one worker is also wearing a high-visibility vest. No exposed edge, unsafe scaffolding condition, electrical hazard, obstructed access route, or other supported hazard can be confidently identified from the visible scene."
+      },
+      "questionable_annotation_rule": "PPE requirement and generic limitations",
+      "reviewer_question": "Which PPE requirement, if any, is supported by the actual activity? Does limited background detail create a concrete adjudication need?",
+      "comparison_cases": [
+        "case_006",
+        "case_007",
+        "case_008",
+        "case_013"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_002",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/live_smoke/02_obvious_hazard.jpg",
+      "image_hash": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "Two workers are wearing hard hats and high-visibility vests while working around reinforcement steel. No exposed edge, fall-from-height condition, unsafe scaffold, electrical hazard, or obstructed access route can be confidently identified from the visible scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Two workers are wearing hard hats and high-visibility vests while working around reinforcement steel. No exposed edge, fall-from-height condition, unsafe scaffold, electrical hazard, or obstructed access route can be confidently identified from the visible scene."
+      },
+      "questionable_annotation_rule": "PPE visibility and review scope",
+      "reviewer_question": "Can the relevant face/PPE area be assessed? Is there a concrete safety question outside the six classes that warrants adjudication without assigning a PPE label?",
+      "comparison_cases": [
+        "case_001",
+        "case_007",
+        "case_014"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_003",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/live_smoke/03_ambiguous.jpg",
+      "image_hash": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "missing_ppe"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "Two workers are standing in an elevated construction-area environment while holding hard hats rather than wearing them. Their heads are clearly visible and uncovered. A guardrail is present along the edge, so the image does not clearly support an unprotected-edge hazard. The scene is elevated, but the visible guardrail reduces the evidence for an immediate fall-exposure condition.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Two workers are standing in an elevated construction-area environment while holding hard hats rather than wearing them. Their heads are clearly visible and uncovered. A guardrail is present along the edge, so the image does not clearly support an unprotected-edge hazard. The scene is elevated, but the visible guardrail reduces the evidence for an immediate fall-exposure condition."
+      },
+      "questionable_annotation_rule": "Elevated activity versus protection defect",
+      "reviewer_question": "Under the proposed elevated-activity definition, what evidence establishes the workers' location/activity? Separately, what protection or PPE facts are supported?",
+      "comparison_cases": [
+        "case_009",
+        "case_011",
+        "case_012",
+        "case_015",
+        "case_019",
+        "case_020"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_004",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/live_smoke/04_multi_hazard.jpg",
+      "image_hash": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height",
+          "unprotected_edge"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "Workers are positioned at an elevated building opening close to the exterior edge. The visible edge protection appears limited to a low concrete upstand rather than a complete guardrail system. The scene supports possible fall exposure, although the exact working height and complete protection arrangement cannot be fully confirmed from this image.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Workers are positioned at an elevated building opening close to the exterior edge. The visible edge protection appears limited to a low concrete upstand rather than a complete guardrail system. The scene supports possible fall exposure, although the exact working height and complete protection arrangement cannot be fully confirmed from this image."
+      },
+      "questionable_annotation_rule": "Complete multi-label review and unsafe storage",
+      "reviewer_question": "Inspect each worker and the whole accessible area: which PPE requirement, edge condition and material/route mechanism can independently be established?",
+      "comparison_cases": [
+        "case_003",
+        "case_007",
+        "case_014",
+        "case_016",
+        "case_017"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_005",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/01.jpg",
+      "image_hash": "45c1659018c5e5971e73d80f6f0c303b2d42965b020334e444663d5c3775408b",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "A construction worker is visibly wearing a hard hat and high-visibility vest. No exposed edge, fall-from-height condition, unsafe scaffolding condition, electrical hazard, or obstructed access route can be confidently identified from the visible scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A construction worker is visibly wearing a hard hat and high-visibility vest. No exposed edge, fall-from-height condition, unsafe scaffolding condition, electrical hazard, or obstructed access route can be confidently identified from the visible scene."
+      },
+      "questionable_annotation_rule": "Generic occlusion versus actionable uncertainty",
+      "reviewer_question": "What is actually assessable in this view, and is any unseen detail needed to decide a concrete visible safety concern?",
+      "comparison_cases": [
+        "case_006",
+        "case_008",
+        "case_018"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_006",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/02.jpg",
+      "image_hash": "876b591b9ce458004875fce6b84f5b18cecef36e501b8564fa85597c01483d5c",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "A worker is visibly wearing a hard hat. Although no high-visibility vest or other PPE is visible, the image does not provide enough task or site context to establish that such equipment is required. No working-at-height condition, unprotected edge, unsafe scaffolding, electrical hazard, or housekeeping hazard can be confidently identified.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly wearing a hard hat. Although no high-visibility vest or other PPE is visible, the image does not provide enough task or site context to establish that such equipment is required. No working-at-height condition, unprotected edge, unsafe scaffolding, electrical hazard, or housekeeping hazard can be confidently identified."
+      },
+      "questionable_annotation_rule": "Task-dependent PPE requirement",
+      "reviewer_question": "Does available task/zone evidence establish a requirement for each apparently unworn item? What remains unknown?",
+      "comparison_cases": [
+        "case_001",
+        "case_007",
+        "case_008",
+        "case_013"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_007",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/03.jpg",
+      "image_hash": "47a6b33dc62ce27bc4922e8ba6375cd30dda64f74059e73962b9a9bb15155538",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "missing_ppe"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "The worker is wearing a hard hat, face covering and gloves, but no high-visibility vest is visible. The image does not establish whether a high-visibility garment is required for this specific task or work zone, so the PPE finding should be treated as uncertain and subject to human review.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The worker is wearing a hard hat, face covering and gloves, but no high-visibility vest is visible. The image does not establish whether a high-visibility garment is required for this specific task or work zone, so the PPE finding should be treated as uncertain and subject to human review."
+      },
+      "questionable_annotation_rule": "Unknown PPE requirement and unclear opening",
+      "reviewer_question": "What establishes a high-visibility requirement? Independently assess the surface/access route and any opening's depth. Which class decisions must remain indeterminate?",
+      "comparison_cases": [
+        "case_001",
+        "case_006",
+        "case_013",
+        "case_016",
+        "case_017"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_008",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/04.jpg",
+      "image_hash": "f0106a6b3da059e1fd42c38fd3afa336df18bb702aef7596bd87dbd4b479bd61",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "The worker is visibly wearing a hard hat, safety glasses and gloves. Hearing protection is present around the neck, but the image does not establish that it is required for the current task. No supported fall, edge, scaffolding, electrical, or housekeeping hazard can be confidently identified from the visible scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The worker is visibly wearing a hard hat, safety glasses and gloves. Hearing protection is present around the neck, but the image does not establish that it is required for the current task. No supported fall, edge, scaffolding, electrical, or housekeeping hazard can be confidently identified from the visible scene."
+      },
+      "questionable_annotation_rule": "Present but unworn task-dependent PPE",
+      "reviewer_question": "Is an activity requiring the unworn equipment observable? Distinguish carrying equipment from needing it during the depicted activity.",
+      "comparison_cases": [
+        "case_001",
+        "case_006",
+        "case_007",
+        "case_020"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_009",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/05.jpg",
+      "image_hash": "3450154516d5003d28d6441c4d39020d5f6cafcf34f57b1952bca1de8a10c1a4",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "A worker is visibly operating on an elevated scaffolding platform. The scene clearly involves work at height, but the viewing distance makes it difficult to confirm the worker’s fall-arrest equipment or the completeness of the scaffold edge protection. Further human review is appropriate.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly operating on an elevated scaffolding platform. The scene clearly involves work at height, but the viewing distance makes it difficult to confirm the worker’s fall-arrest equipment or the completeness of the scaffold edge protection. Further human review is appropriate."
+      },
+      "questionable_annotation_rule": "Elevated activity and unverified protection",
+      "reviewer_question": "Separate credible elevated activity from a visible scaffold defect. Does uncertainty concern a concrete safety decision or simply unseen system details?",
+      "comparison_cases": [
+        "case_003",
+        "case_010",
+        "case_011",
+        "case_012",
+        "case_019"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_010",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/06.jpg",
+      "image_hash": "88c113d4ff8c37031eb372967808f1822e0ed97e69f7ea1cf677db278fc55b09",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height",
+          "unsafe_scaffolding"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "A worker is visibly operating on an elevated external scaffold/platform. The working surface appears narrow, and the visible scaffold arrangement does not clearly show complete edge protection or a fully developed working platform. The image supports work-at-height exposure and a possible scaffold safety concern, but the full scaffold condition cannot be confirmed from this single view.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly operating on an elevated external scaffold/platform. The working surface appears narrow, and the visible scaffold arrangement does not clearly show complete edge protection or a fully developed working platform. The image supports work-at-height exposure and a possible scaffold safety concern, but the full scaffold condition cannot be confirmed from this single view."
+      },
+      "questionable_annotation_rule": "Specific scaffold defect",
+      "reviewer_question": "Identify the exact supporting platform/access/protection component and any visible defect. Is this a confirmed defect or merely incomplete visibility?",
+      "comparison_cases": [
+        "case_009",
+        "case_011",
+        "case_012",
+        "case_019"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_011",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/07.jpg",
+      "image_hash": "bd5c4ebf6933269c1b6efab51f6d2e0faeaa90ccd17550e375523e550960c77f",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "Workers are visibly operating on a suspended exterior work platform at significant elevation. The platform has visible guardrails, but the image does not clearly show the workers’ fall-arrest attachment or the full condition of the suspension system. The scene clearly supports work-at-height exposure and warrants human review of the protection arrangements.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Workers are visibly operating on a suspended exterior work platform at significant elevation. The platform has visible guardrails, but the image does not clearly show the workers’ fall-arrest attachment or the full condition of the suspension system. The scene clearly supports work-at-height exposure and warrants human review of the protection arrangements."
+      },
+      "questionable_annotation_rule": "Working lines versus obstruction; PPE resolution",
+      "reviewer_question": "What establishes elevated activity, a genuinely obstructed work/access surface, or identifiable PPE absence? Which facts are too distant to determine?",
+      "comparison_cases": [
+        "case_003",
+        "case_009",
+        "case_012",
+        "case_016",
+        "case_017"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_012",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/08.jpg",
+      "image_hash": "698c424974350e9c090bd24d8fbbf5fdfe204baf7456656ab63d57e13e296277",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "A worker is visibly operating on a suspended exterior platform at a significant height on the building facade. The platform has visible guardrails, but the image does not clearly show the worker’s fall-arrest attachment or the full condition of the suspension system. The scene clearly supports a work-at-height condition and warrants human review of the protection arrangements.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly operating on a suspended exterior platform at a significant height on the building facade. The platform has visible guardrails, but the image does not clearly show the worker’s fall-arrest attachment or the full condition of the suspension system. The scene clearly supports a work-at-height condition and warrants human review of the protection arrangements."
+      },
+      "questionable_annotation_rule": "Consistent height and review criteria",
+      "reviewer_question": "Apply exactly the same elevated-activity and protection-uncertainty rules used for the other suspended-platform examples.",
+      "comparison_cases": [
+        "case_003",
+        "case_009",
+        "case_011",
+        "case_015",
+        "case_019",
+        "case_020"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_013",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/09.jpg",
+      "image_hash": "9ed66ff6423ef8df7c41addeba554d31860a804f06fc635f3988778c70eb0bf6",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "The worker is visibly wearing a hard hat and safety glasses. The visible red cable or hose does not by itself establish an electrical hazard, and no fall, edge, scaffolding, or housekeeping hazard can be confidently identified from the scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The worker is visibly wearing a hard hat and safety glasses. The visible red cable or hose does not by itself establish an electrical hazard, and no fall, edge, scaffolding, or housekeeping hazard can be confidently identified from the scene."
+      },
+      "questionable_annotation_rule": "Glove requirement and cable identity",
+      "reviewer_question": "What observable task establishes required hand protection, if any? Is a specific electrical defect visible rather than just a cable/hose?",
+      "comparison_cases": [
+        "case_001",
+        "case_006",
+        "case_007",
+        "case_015",
+        "case_016"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_014",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/10.jpg",
+      "image_hash": "f909dc1ed25109dcfd678305a3459b012813d10193cd4bb62861b37654387135",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "missing_ppe"
+        ],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "The worker is standing in an active construction/excavation area with his head fully visible and no hard hat being worn. No clear evidence supports a working-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard in this image.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The worker is standing in an active construction/excavation area with his head fully visible and no hard hat being worn. No clear evidence supports a working-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard in this image."
+      },
+      "questionable_annotation_rule": "Headwear requirement and actual access obstruction",
+      "reviewer_question": "What task context supports head protection? Independently determine whether materials/lines obstruct an accessible route or are being actively handled safely.",
+      "comparison_cases": [
+        "case_003",
+        "case_004",
+        "case_007",
+        "case_016",
+        "case_017"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_015",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/11.jpg",
+      "image_hash": "6ea2074a087d0ee314b2d329c0267b0102ceded263f697f219d875abbdfe46fe",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "Two workers are visibly performing work at a significant elevation on an overhead line structure. Hard hats and fall-protection equipment appear to be present. The image clearly supports a work-at-height condition, while no specific scaffold defect, unprotected edge, missing PPE, or unsafe electrical condition can be confidently established from the visible evidence.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Two workers are visibly performing work at a significant elevation on an overhead line structure. Hard hats and fall-protection equipment appear to be present. The image clearly supports a work-at-height condition, while no specific scaffold defect, unprotected edge, missing PPE, or unsafe electrical condition can be confidently established from the visible evidence."
+      },
+      "questionable_annotation_rule": "Electrical condition versus equipment; review semantics",
+      "reviewer_question": "Identify an actual electrical defect/unsafe interaction, if any, separately from elevated activity. Does a specific missing protection fact require adjudication?",
+      "comparison_cases": [
+        "case_009",
+        "case_011",
+        "case_012",
+        "case_017",
+        "case_019"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_016",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/12.jpg",
+      "image_hash": "4d0f4fc16202977e5861db1cd72e6d5522fab8b0fc77523e64cceee6e3c5941f",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "housekeeping"
+        ],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "Multiple cables and hoses are loosely tangled and spread across the floor, creating a clear trip hazard and obstructed walking surface. The image supports a housekeeping hazard, but there is no visible evidence of exposed conductors, damaged insulation, or another specific electrical defect.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "Multiple cables and hoses are loosely tangled and spread across the floor, creating a clear trip hazard and obstructed walking surface. The image supports a housekeeping hazard, but there is no visible evidence of exposed conductors, damaged insulation, or another specific electrical defect."
+      },
+      "questionable_annotation_rule": "Clear hazard versus operational confirmation",
+      "reviewer_question": "Is there a clear trip mechanism? If classification is clear, does it need perceptual adjudication, operational confirmation, both or neither under the proposed definitions?",
+      "comparison_cases": [
+        "case_007",
+        "case_011",
+        "case_014",
+        "case_017"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_017",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/13.jpg",
+      "image_hash": "a462f069ec6ec26840e615c16d7be72d1315ab982c38134314f976f9b87d54f5",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "housekeeping"
+        ],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "The passageway is visibly cluttered with containers, equipment and uneven debris, and the floor appears wet or muddy in places. These conditions create a clear housekeeping and trip/slip hazard along the walking route. No specific electrical, fall-from-height, scaffolding or PPE hazard can be confidently established from the image.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The passageway is visibly cluttered with containers, equipment and uneven debris, and the floor appears wet or muddy in places. These conditions create a clear housekeeping and trip/slip hazard along the walking route. No specific electrical, fall-from-height, scaffolding or PPE hazard can be confidently established from the image."
+      },
+      "questionable_annotation_rule": "Wet electrical interaction, PPE context and clutter",
+      "reviewer_question": "Separate route/slip obstruction, actual electrical moisture exposure/protection and item-specific PPE requirements. Which are supported, uncertain or unsupported?",
+      "comparison_cases": [
+        "case_004",
+        "case_014",
+        "case_015",
+        "case_016"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_018",
+      "queue_role": "comparison_consistency_review",
+      "image_path": "fixtures/vision_pilot/14.jpg",
+      "image_hash": "1e263c9a442de8dac19e34dfe51051be6d81ef99f822478a928191153f9c017a",
+      "original_annotation": {
+        "ground_truth_hazards": [],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "The pedestrian access route appears clearly defined and unobstructed, with continuous barriers on both sides. No supported PPE, work-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard can be confidently identified from the visible scene.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "The pedestrian access route appears clearly defined and unobstructed, with continuous barriers on both sides. No supported PPE, work-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard can be confidently identified from the visible scene."
+      },
+      "questionable_annotation_rule": "Global image limitation versus actionable ambiguity",
+      "reviewer_question": "Does a specific visible condition need interpretation, or are only unobservable remote/general site conditions unknown?",
+      "comparison_cases": [
+        "case_005",
+        "case_006",
+        "case_008",
+        "case_016"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_019",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/15.jpg",
+      "image_hash": "ac036db5ba7df8c5770d47b223ad18676ae2a6166e9803dc4b29b0e81208bc7f",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": false,
+        "expected_human_review": false,
+        "evidence_notes": "A worker is visibly climbing an elevated scaffold structure at significant height above ground level. The scene clearly supports a work-at-height condition. A harness or fall-arrest equipment may be present, but the image does not establish whether it is properly connected, so no additional PPE or scaffold-defect label is assigned.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly climbing an elevated scaffold structure at significant height above ground level. The scene clearly supports a work-at-height condition. A harness or fall-arrest equipment may be present, but the image does not establish whether it is properly connected, so no additional PPE or scaffold-defect label is assigned."
+      },
+      "questionable_annotation_rule": "Elevated access and attachment uncertainty",
+      "reviewer_question": "Establish activity/elevation independently of harness status. Apply the same adjudication-need rule to unconfirmed attachment as in comparable elevated work.",
+      "comparison_cases": [
+        "case_003",
+        "case_009",
+        "case_010",
+        "case_011",
+        "case_012",
+        "case_015",
+        "case_020"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    },
+    {
+      "case_id": "case_020",
+      "queue_role": "priority_adjudication",
+      "image_path": "fixtures/vision_pilot/16.jpg",
+      "image_hash": "22b5753c9db4e1b8fb4881be9659efac43db5b0ab7de89bd1dcc89aab043c78a",
+      "original_annotation": {
+        "ground_truth_hazards": [
+          "working_at_height"
+        ],
+        "ambiguous": true,
+        "expected_human_review": true,
+        "evidence_notes": "A worker is visibly performing construction work at an elevated building level while using a powered cutting tool. A hard hat and what appears to be fall-protection equipment are visible, but the image does not clearly establish the complete edge-protection arrangement or whether the fall-arrest system is properly connected. The scene therefore supports a work-at-height condition and warrants human review.",
+        "reviewer": "REVIEWER_1",
+        "secondary_reviewer": "",
+        "label_status": "reviewed"
+      },
+      "relevant_evidence": {
+        "source": "original human notes; unverified for v2; not an independent image assessment",
+        "text": "A worker is visibly performing construction work at an elevated building level while using a powered cutting tool. A hard hat and what appears to be fall-protection equipment are visible, but the image does not clearly establish the complete edge-protection arrangement or whether the fall-arrest system is properly connected. The scene therefore supports a work-at-height condition and warrants human review."
+      },
+      "questionable_annotation_rule": "Active tool context and PPE; obscured elevation",
+      "reviewer_question": "Does the image establish the task/operating state and each PPE item's requirement and visibility? Evaluate elevated activity separately from protection uncertainty.",
+      "comparison_cases": [
+        "case_007",
+        "case_008",
+        "case_011",
+        "case_012",
+        "case_013",
+        "case_019"
+      ],
+      "visibility": {
+        "initial_review": [
+          "original_image",
+          "generic_protocol_without_case_examples"
+        ],
+        "after_independent_record": [
+          "original_annotation",
+          "relevant_evidence",
+          "questionable_annotation_rule",
+          "reviewer_question",
+          "comparison_cases"
+        ],
+        "model_predictions": "not embedded; facilitator may reveal only after independent decisions are recorded"
+      },
+      "reviewer": null,
+      "reviewer_prior_exposure": null,
+      "reviewer_decision": null,
+      "reviewer_rationale": null,
+      "independent_review_completed_at": null,
+      "secondary_reviewer": null,
+      "adjudication_status": "pending"
+    }
+  ]
+}

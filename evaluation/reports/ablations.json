@@ -1,0 +1,146 @@
+[
+  {
+    "system": "A - Generic vision",
+    "components": [
+      "generic_direct"
+    ],
+    "vision": null,
+    "joint_status": "PENDING LIVE EVALUATION",
+    "joint_score": null,
+    "component_statuses": {
+      "vision": "PENDING LIVE EVALUATION"
+    }
+  },
+  {
+    "system": "B - Vision + basic RAG",
+    "components": [
+      "generic_direct",
+      "semantic_only"
+    ],
+    "rag": {
+      "queries": 48,
+      "answerable_queries": 36,
+      "no_answer_queries": 12,
+      "errors": 0,
+      "recall_at_1": 0.6388888888888888,
+      "recall_at_3": 0.75,
+      "hit_at_1": 0.6388888888888888,
+      "hit_at_3": 0.75,
+      "precision_at_3": 0.5833333333333334,
+      "mrr": 0.6944444444444444,
+      "no_answer_accuracy": 0.0,
+      "citations": 144,
+      "unsupported_citation_rate": 0.0,
+      "verified_source_rate": 1.0
+    },
+    "joint_status": "PENDING LIVE EVALUATION",
+    "joint_score": null,
+    "component_statuses": {
+      "vision": "PENDING LIVE EVALUATION",
+      "rag": "VERIFIED RESULT"
+    }
+  },
+  {
+    "system": "C - Vision + verified RAG + RiskEngine",
+    "components": [
+      "safesite_vision",
+      "semantic_metadata",
+      "RiskEngine"
+    ],
+    "rag": {
+      "queries": 48,
+      "answerable_queries": 36,
+      "no_answer_queries": 12,
+      "errors": 0,
+      "recall_at_1": 0.75,
+      "recall_at_3": 0.8333333333333334,
+      "hit_at_1": 0.75,
+      "hit_at_3": 0.8333333333333334,
+      "precision_at_3": 0.7407407407407408,
+      "mrr": 0.7916666666666666,
+      "no_answer_accuracy": 0.25,
+      "citations": 135,
+      "unsupported_citation_rate": 0.0,
+      "verified_source_rate": 1.0
+    },
+    "risk": {
+      "classification_accuracy": 1.0,
+      "boundary_accuracy": 1.0,
+      "override_accuracy": 1.0,
+      "human_review_accuracy": 1.0,
+      "score_accuracy": 1.0
+    },
+    "joint_status": "PENDING LIVE EVALUATION",
+    "joint_score": null,
+    "component_statuses": {
+      "vision": "PENDING LIVE EVALUATION",
+      "rag": "VERIFIED RESULT",
+      "risk": "VERIFIED RESULT"
+    }
+  },
+  {
+    "system": "D - Full SafeSite",
+    "components": [
+      "safesite_vision",
+      "safesite_retrieval",
+      "RiskEngine",
+      "human_review",
+      "workflow_controls"
+    ],
+    "rag": {
+      "queries": 48,
+      "answerable_queries": 36,
+      "no_answer_queries": 12,
+      "errors": 0,
+      "recall_at_1": 0.6944444444444444,
+      "recall_at_3": 0.8888888888888888,
+      "hit_at_1": 0.6944444444444444,
+      "hit_at_3": 0.8888888888888888,
+      "precision_at_3": 0.5185185185185185,
+      "mrr": 0.7824074074074074,
+      "no_answer_accuracy": 0.9166666666666666,
+      "citations": 100,
+      "unsupported_citation_rate": 0.0,
+      "verified_source_rate": 1.0
+    },
+    "risk": {
+      "classification_accuracy": 1.0,
+      "boundary_accuracy": 1.0,
+      "override_accuracy": 1.0,
+      "human_review_accuracy": 1.0,
+      "score_accuracy": 1.0
+    },
+    "workflow": {
+      "scenarios": 20,
+      "workflow_success_rate": 1.0,
+      "safety_guardrail": {
+        "passed": 14,
+        "total": 14,
+        "success_rate": 1.0
+      },
+      "human_control": {
+        "passed": 11,
+        "total": 11,
+        "success_rate": 1.0
+      },
+      "audit_completeness": {
+        "passed": 5,
+        "total": 5,
+        "success_rate": 1.0
+      },
+      "state_transition": {
+        "passed": 16,
+        "total": 16,
+        "success_rate": 1.0
+      }
+    },
+    "joint_status": "PENDING LIVE EVALUATION",
+    "joint_score": null,
+    "component_statuses": {
+      "vision": "PENDING LIVE EVALUATION",
+      "rag": "VERIFIED RESULT",
+      "risk": "VERIFIED RESULT",
+      "workflow": "MOCKED/UNIT-TEST RESULT"
+    }
+  }
+]

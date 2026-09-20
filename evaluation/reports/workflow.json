@@ -1,0 +1,257 @@
+{
+  "status": "MOCKED/UNIT-TEST RESULT",
+  "basis": "Real application services and SQLite; injected providers/synthetic images. No model accuracy.",
+  "metrics": {
+    "scenarios": 20,
+    "workflow_success_rate": 1.0,
+    "safety_guardrail": {
+      "passed": 14,
+      "total": 14,
+      "success_rate": 1.0
+    },
+    "human_control": {
+      "passed": 11,
+      "total": 11,
+      "success_rate": 1.0
+    },
+    "audit_completeness": {
+      "passed": 5,
+      "total": 5,
+      "success_rate": 1.0
+    },
+    "state_transition": {
+      "passed": 16,
+      "total": 16,
+      "success_rate": 1.0
+    }
+  },
+  "rows": [
+    {
+      "case_id": "WF-001",
+      "node": "tests/test_workflow.py::test_analysis_persistence_and_idempotency",
+      "success_criteria": "Analysis persists two hazards once, no incident before confirmation",
+      "criteria": [
+        "state_transition",
+        "human_control",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-002",
+      "node": "tests/test_workflow.py::test_confirmation_creates_real_incidents_once",
+      "success_criteria": "Human confirmation creates incidents and actions exactly once",
+      "criteria": [
+        "state_transition",
+        "human_control"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-003",
+      "node": "tests/test_workflow.py::test_modify_preserves_original_ai_finding",
+      "success_criteria": "Human modification retains original AI evidence and risk",
+      "criteria": [
+        "human_control",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-004",
+      "node": "tests/test_workflow.py::test_rejection_does_not_create_incidents",
+      "success_criteria": "Rejected finding cannot produce incident",
+      "criteria": [
+        "state_transition",
+        "human_control",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-005",
+      "node": "tests/test_workflow.py::test_incident_cannot_close_without_workflow",
+      "success_criteria": "Cannot close early or reinspect before actions complete",
+      "criteria": [
+        "state_transition",
+        "human_control",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-006",
+      "node": "tests/test_workflow.py::test_human_close_after_reinspection_and_audit",
+      "success_criteria": "Rectification, reinspection and human closure; required AI/human audit subset",
+      "criteria": [
+        "state_transition",
+        "human_control",
+        "safety_guardrail",
+        "audit_completeness"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-007",
+      "node": "tests/test_workflow.py::test_human_can_override_eligible_reinspection",
+      "success_criteria": "Supervisor can return eligible case for further work",
+      "criteria": [
+        "state_transition",
+        "human_control"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-008",
+      "node": "tests/test_workflow.py::test_low_confidence_does_not_discount_risk",
+      "success_criteria": "Low confidence retains risk and forces review",
+      "criteria": [
+        "safety_guardrail",
+        "human_control"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-009",
+      "node": "tests/test_workflow.py::test_provider_failure_is_persisted_without_partial_hazards",
+      "success_criteria": "Failed provider cannot leave partial hazard state",
+      "criteria": [
+        "safety_guardrail",
+        "state_transition"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-010",
+      "node": "tests/test_workflow.py::test_business_risk_overrides_provider_score",
+      "success_criteria": "Deterministic policy overrides model supplied score",
+      "criteria": [
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-011",
+      "node": "tests/test_analysis_recovery.py::test_failure_then_retry_records_audit",
+      "success_criteria": "Provider failure can retry; failure event remains",
+      "criteria": [
+        "state_transition",
+        "audit_completeness"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-012",
+      "node": "tests/test_analysis_recovery.py::test_stale_attempt_retries_without_losing_metadata[False]",
+      "success_criteria": "Stale attempt recovers without losing context; recovery event",
+      "criteria": [
+        "state_transition",
+        "audit_completeness"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-013",
+      "node": "tests/test_analysis_recovery.py::test_stale_attempt_retries_without_losing_metadata[True]",
+      "success_criteria": "Legacy stale attempt recovers with audit event",
+      "criteria": [
+        "state_transition",
+        "audit_completeness"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-014",
+      "node": "tests/test_analysis_recovery.py::test_fresh_attempt_not_stolen",
+      "success_criteria": "Fresh ANALYZING attempt cannot be stolen",
+      "criteria": [
+        "state_transition",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-015",
+      "node": "tests/test_analysis_recovery.py::test_expired_response_cannot_overwrite_new_attempt[False]",
+      "success_criteria": "Expired successful response cannot overwrite newer analysis",
+      "criteria": [
+        "state_transition",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-016",
+      "node": "tests/test_analysis_recovery.py::test_start_timestamp_persisted_before_inference",
+      "success_criteria": "Start event durably exists before inference",
+      "criteria": [
+        "audit_completeness",
+        "state_transition"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-017",
+      "node": "tests/test_knowledge.py::test_retrieval_error_does_not_break_safety_workflow",
+      "success_criteria": "No regulation evidence does not invent citations or block human confirmation",
+      "criteria": [
+        "state_transition",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-018",
+      "node": "tests/test_knowledge.py::test_real_workflow_retrieval_risk_and_human_controls",
+      "success_criteria": "Injected real-provider path uses stored fixture sources and human controls",
+      "criteria": [
+        "human_control",
+        "safety_guardrail"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-019",
+      "node": "tests/test_real_provider.py::test_real_reinspection_never_closes_case",
+      "success_criteria": "Reinspection eligibility does not automatically close incident",
+      "criteria": [
+        "human_control",
+        "safety_guardrail",
+        "state_transition"
+      ],
+      "passed": true,
+      "error": null
+    },
+    {
+      "case_id": "WF-020",
+      "node": "tests/test_real_provider.py::test_zero_hazards_valid_no_incident_confirmation",
+      "success_criteria": "Zero hazards cannot be confirmed into an invented incident",
+      "criteria": [
+        "human_control",
+        "safety_guardrail",
+        "state_transition"
+      ],
+      "passed": true,
+      "error": null
+    }
+  ],
+  "pytest_exit_code": 0
+}

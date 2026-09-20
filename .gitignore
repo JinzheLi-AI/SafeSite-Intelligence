@@ -1,0 +1,51 @@
+node_modules/
+.next/
+.venv/
+__pycache__/
+.pytest_cache/
+*.pyc
+*.tsbuildinfo
+.env
+.env.local
+data/
+uploads/
+test-results/
+playwright-report/
+*.log
+
+# Private configuration, runtime state and publication review artifacts
+.env.*
+!.env.example
+*.db
+*.db-*
+*.sqlite
+*.sqlite3
+*.sqlite-*
+*.pem
+*.key
+*.p12
+*.pfx
+.publication/
+.DS_Store
+Thumbs.db
+
+# Third-party media remain local until redistribution review is complete.
+# Publication uses an explicit audited inventory, never a blanket git add.
+evaluation/fixtures/**/*.jpg
+evaluation/fixtures/**/*.jpeg
+evaluation/fixtures/**/*.png
+evaluation/fixtures/**/*.webp
+docs/screenshots/
+evaluation/reports/related_review_20260919/*.jpg
+
+# File-specific Wikimedia permission review; retain attribution notices.
+!evaluation/fixtures/vision_v2/development/0ff09fde744df4eb7f5c5d8b073cb6ff4623fe1baa573a037539009a5f0a9a3b.jpg
+!evaluation/fixtures/vision_v2/development/1d0191a7b220df2aad87f25a2fc461b2e5ddd11787c45b0108e1968db17b7132.jpg
+!evaluation/fixtures/vision_v2/development/76794757c74f320e5eb426f6efd0f11bb0918345b68105322ba995f638277f8b.jpg
+!evaluation/fixtures/vision_v2/development/3adf636b35d1a293f458c6a77eca2e1de872edf0fff20fb4393d390dece16ffa.jpg
+!evaluation/fixtures/vision_v2/development/ec3f2762cba15938f0cee4ff0e9c5ab003b81256fa5d44ed6d746d24a50b7b91.jpg
+!evaluation/fixtures/vision_v2/development/7401b14257e8fbd28b7a3f528ddb059c8b79163e201fbfe72d12f09695a52987.jpg
+!evaluation/fixtures/vision_v2/development/2424691fffcd118bf21625b446986bd11a1afdef9974b24e77772d5a9ca3c760.jpg
+!evaluation/fixtures/vision_v2/development/cd639ceab1204a16dfd0c8acc191a80a314a4a3d9f519908a34146fe3ca1dd69.jpg
+!evaluation/fixtures/vision_v2/development/fbfd230b416044a7919c81f26bf501e8867a90ff9b24be50a4bf0f6cfa54ebdf.jpg
+!evaluation/fixtures/vision_v2/development/8f8da3fd35fde4d0446b03020a2895d33339ed2cb9203787a61d6f8860ac940b.jpg

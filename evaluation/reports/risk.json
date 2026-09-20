@@ -1,0 +1,747 @@
+{
+  "status": "VERIFIED RESULT",
+  "basis": "Deterministic policy specification conformance; not field safety accuracy.",
+  "policy_version": "safety-policy-1.0",
+  "cases": 40,
+  "metrics": {
+    "classification_accuracy": 1.0,
+    "boundary_accuracy": 1.0,
+    "override_accuracy": 1.0,
+    "human_review_accuracy": 1.0,
+    "score_accuracy": 1.0
+  },
+  "rows": [
+    {
+      "case_id": "RISK-001",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "LOW"
+      }
+    },
+    {
+      "case_id": "RISK-002",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "LOW"
+      }
+    },
+    {
+      "case_id": "RISK-003",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "LOW"
+      }
+    },
+    {
+      "case_id": "RISK-004",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "LOW"
+      }
+    },
+    {
+      "case_id": "RISK-005",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "MEDIUM"
+      }
+    },
+    {
+      "case_id": "RISK-006",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "MEDIUM"
+      }
+    },
+    {
+      "case_id": "RISK-007",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "MEDIUM"
+      }
+    },
+    {
+      "case_id": "RISK-008",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "MEDIUM"
+      }
+    },
+    {
+      "case_id": "RISK-009",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "HIGH"
+      }
+    },
+    {
+      "case_id": "RISK-010",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "HIGH"
+      }
+    },
+    {
+      "case_id": "RISK-011",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "HIGH"
+      }
+    },
+    {
+      "case_id": "RISK-012",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "HIGH"
+      }
+    },
+    {
+      "case_id": "RISK-013",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "CRITICAL"
+      }
+    },
+    {
+      "case_id": "RISK-014",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "CRITICAL"
+      }
+    },
+    {
+      "case_id": "RISK-015",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "CRITICAL"
+      }
+    },
+    {
+      "case_id": "RISK-016",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "boundary": true
+      },
+      "actual": {
+        "level": "CRITICAL"
+      }
+    },
+    {
+      "case_id": "RISK-017",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-018",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-019",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 20,
+        "risk_level": "LOW",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-020",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-021",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-022",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-023",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 85,
+        "risk_level": "CRITICAL",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [
+          "WAH-001: severity ≥ 5 and exposure ≥ 4 require CRITICAL (minimum score 85)."
+        ],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-024",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [
+          "WAH-001: severity ≥ 5 and exposure ≥ 4 require CRITICAL (minimum score 85)."
+        ],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-025",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-026",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-027",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 20,
+        "risk_level": "LOW",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-028",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-029",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-030",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-031",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 20,
+        "risk_level": "LOW",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-032",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-033",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-034",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-035",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 20,
+        "risk_level": "LOW",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-036",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-037",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 1,
+        "exposure": 1,
+        "probability": 1,
+        "raw_score": 1,
+        "final_score": 1,
+        "risk_level": "LOW",
+        "confidence": 0.95,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-038",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 3,
+        "probability": 2,
+        "raw_score": 30,
+        "final_score": 30,
+        "risk_level": "MEDIUM",
+        "confidence": 0.79,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-039",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 4,
+        "probability": 1,
+        "raw_score": 20,
+        "final_score": 20,
+        "risk_level": "LOW",
+        "confidence": 0.2,
+        "requires_human_review": true,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    },
+    {
+      "case_id": "RISK-040",
+      "passed": true,
+      "checks": {
+        "classification": true,
+        "score": true,
+        "override": true,
+        "human_review": true
+      },
+      "actual": {
+        "severity": 5,
+        "exposure": 5,
+        "probability": 4,
+        "raw_score": 100,
+        "final_score": 100,
+        "risk_level": "CRITICAL",
+        "confidence": 0.8,
+        "requires_human_review": false,
+        "policy_version": "safety-policy-1.0",
+        "overrides": [],
+        "formula": "Severity × Exposure × Probability (maximum 5 × 5 × 4 = 100). Confidence never discounts risk."
+      }
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "validation": {
+    "total_cases": 10,
+    "images_present": 10,
+    "missing_images": 0,
+    "reviewed": 10,
+    "benchmark_ready": 10,
+    "duplicate_images": 0,
+    "errors": [],
+    "warnings": [
+      "v2_development_002: site unknown; independence cannot be guaranteed",
+      "v2_development_005: site unknown; independence cannot be guaranteed",
+      "v2_development_006: site unknown; independence cannot be guaranteed",
+      "v2_development_007: site unknown; independence cannot be guaranteed",
+      "v2_development_008: site unknown; independence cannot be guaranteed",
+      "v2_development_009: site unknown; independence cannot be guaranteed"
+    ],
+    "frozen": false
+  },
+  "manifest_after_sha256": "924ed7acbe7be3741e3bed3ef4d89dac5eb05493a322f0f9868d79c4daf0b475",
+  "only_evidence_notes_changed": true,
+  "protected_files_unchanged": 99,
+  "model_api_calls": 0
+}

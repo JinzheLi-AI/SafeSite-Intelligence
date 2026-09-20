@@ -1,0 +1,19 @@
+{
+  "attempts": 20,
+  "successes": 20,
+  "failures": 0,
+  "valid_pairs": 10,
+  "budget_respected": true,
+  "offline_reproduction_byte_identical": true,
+  "reproduction_network_blocked": true,
+  "additional_api_calls": 0,
+  "protected_files_verified": 111,
+  "tests_passed": 102,
+  "tests_failed": 0,
+  "json_validation": "passed",
+  "denominators": {
+    "image_class_pairs": 59,
+    "exact_match_cases": 9,
+    "safe_scenes": 3
+  }
+}

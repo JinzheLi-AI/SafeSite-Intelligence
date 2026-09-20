@@ -1,0 +1,7 @@
+{
+  "status": "PENDING LIVE EVALUATION",
+  "manifest_cases": 72,
+  "reviewed_cases": 0,
+  "baselines": {},
+  "reason": "Requires reviewed real images, configured credentials and explicit --live-vision."
+}

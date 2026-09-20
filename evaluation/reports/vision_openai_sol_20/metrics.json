@@ -1,0 +1,136 @@
+{
+  "status": "stopped",
+  "planned_cases": 20,
+  "successful_calls": 0,
+  "failed_calls": 4,
+  "unattempted_cases": 16,
+  "classification_coverage": 0.0,
+  "micro": {
+    "precision": null,
+    "recall": null,
+    "f1": null
+  },
+  "macro": {
+    "precision": null,
+    "recall": null,
+    "f1": null
+  },
+  "macro_defined_classes": {
+    "precision": 0,
+    "recall": 0,
+    "f1": 0
+  },
+  "per_class": {
+    "missing_ppe": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 3,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "working_at_height": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 8,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "unprotected_edge": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 1,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "unsafe_scaffolding": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 1,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "electrical_hazard": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 0,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    },
+    "housekeeping": {
+      "tp": null,
+      "fp": null,
+      "fn": null,
+      "support": 0,
+      "dataset_support": 2,
+      "precision": null,
+      "recall": null,
+      "f1": null
+    }
+  },
+  "false_positive_count": null,
+  "false_negative_count": null,
+  "exact_match_rate": null,
+  "multi_hazard_cases": 0,
+  "multi_hazard_exact_match_rate": null,
+  "safe_scene": {
+    "dataset_count": 7,
+    "evaluated_count": 0,
+    "correct_zero_hazard_count": 0,
+    "false_positive_scene_count": 0,
+    "false_positive_label_count": 0,
+    "false_positive_rate": null,
+    "false_positive_categories": []
+  },
+  "human_review": {
+    "dataset_expected_count": 8,
+    "evaluated_expected_count": 0,
+    "true_review_flags": 0,
+    "missed_review_flags": 0,
+    "ambiguous_case_review_recall": null,
+    "ambiguous_subset_count": 0,
+    "ambiguous_subset_review_recall": null,
+    "unnecessary_review_rate": null
+  },
+  "confidence": {
+    "true_positive": {
+      "count": 0,
+      "mean": null
+    },
+    "false_positive": {
+      "count": 0,
+      "mean": null
+    }
+  },
+  "latency_ms": {
+    "count": 4,
+    "average": 471.25,
+    "median": 37.5,
+    "p95_nearest_rank": 1790,
+    "basis": "Local provider-attempt duration including failed connections; not successful inference latency."
+  },
+  "methodology": "Classification uses successful structured outputs only; failures are unavailable, never negative predictions. Undefined ratios are null; macro averages exclude undefined class ratios and expose denominators. Human review uses production post-guardrail flag. No RiskEngine classification input.",
+  "input_tokens": null,
+  "input_tokens_reported_calls": 0,
+  "output_tokens": null,
+  "output_tokens_reported_calls": 0,
+  "total_tokens": null,
+  "total_tokens_reported_calls": 0,
+  "estimated_cost_usd": null,
+  "estimated_cost_usd_reported_calls": 0,
+  "average_tokens_per_attempted_image": null
+}

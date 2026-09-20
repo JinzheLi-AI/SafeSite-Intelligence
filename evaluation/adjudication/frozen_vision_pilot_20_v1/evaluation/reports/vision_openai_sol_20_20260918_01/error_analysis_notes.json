@@ -1,0 +1,46 @@
+{
+  "case_001": {
+    "likely_error_category": "PPE requirement inferred without task evidence",
+    "explanation": "Model flags eyewear while explicitly acknowledging that the task requirement is unknown; frozen label is safe."
+  },
+  "case_002": {
+    "likely_error_category": "not-visible vs missing confusion; occluded PPE",
+    "explanation": "Model flags eyewear while describing shaded/partly obscured faces and acknowledging absence cannot be confirmed."
+  },
+  "case_003": {
+    "likely_error_category": "working-at-height over-detection",
+    "explanation": "Model includes height exposure despite describing a multi-rail barrier; reviewer did not label immediate fall exposure."
+  },
+  "case_004": {
+    "likely_error_category": "housekeeping subjectivity; PPE annotation disagreement",
+    "explanation": "Model claims an uncovered head and displacement risk from stored materials. Human notes focus on fall exposure. This may include annotation omission or a differing threshold; no independent adjudication establishes which interpretation is correct."
+  },
+  "case_007": {
+    "likely_error_category": "edge-depth ambiguity; housekeeping subjectivity; PPE annotation disagreement",
+    "explanation": "Model labels a possible opening of unknown depth and local debris, but omits the human-labeled uncertain high-visibility PPE concern. The human notes themselves acknowledge the PPE requirement is unknown. This is the sole scored false negative, not proof that the human interpretation is definitive."
+  },
+  "case_011": {
+    "likely_error_category": "image resolution/distance limitation; not-visible vs missing confusion; housekeeping subjectivity",
+    "explanation": "Model flags uncertain helmet identification and platform lines, while human notes label height exposure only."
+  },
+  "case_013": {
+    "likely_error_category": "PPE requirement inferred without task evidence",
+    "explanation": "Model flags bare hands while explicitly acknowledging that the need for gloves cannot be determined."
+  },
+  "case_014": {
+    "likely_error_category": "housekeeping subjectivity",
+    "explanation": "Model interprets cable/coil placement and uneven excavation ground as a trip concern; reviewer labels only missing head protection."
+  },
+  "case_015": {
+    "likely_error_category": "electrical-object vs electrical-hazard confusion",
+    "explanation": "Model labels proximity to conductors while acknowledging energization, isolation and grounding cannot be established."
+  },
+  "case_017": {
+    "likely_error_category": "electrical-object vs electrical-hazard confusion; PPE annotation disagreement",
+    "explanation": "Model cites lighting/cords above wet ground plus sandals and headwear. Reviewer labels only housekeeping. Electrical protection and task-specific PPE requirements remain unresolved in the model explanation."
+  },
+  "case_020": {
+    "likely_error_category": "not-visible vs missing confusion; PPE requirement uncertainty",
+    "explanation": "Model flags eye/hearing protection near a saw but cannot establish whether it is operating; reviewer labels height exposure only."
+  }
+}

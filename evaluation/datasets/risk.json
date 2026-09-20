@@ -1,0 +1,410 @@
+[
+  {
+    "case_id": "RISK-001",
+    "kind": "boundary",
+    "score": 0,
+    "expected_level": "LOW"
+  },
+  {
+    "case_id": "RISK-002",
+    "kind": "boundary",
+    "score": 1,
+    "expected_level": "LOW"
+  },
+  {
+    "case_id": "RISK-003",
+    "kind": "boundary",
+    "score": 23,
+    "expected_level": "LOW"
+  },
+  {
+    "case_id": "RISK-004",
+    "kind": "boundary",
+    "score": 24,
+    "expected_level": "LOW"
+  },
+  {
+    "case_id": "RISK-005",
+    "kind": "boundary",
+    "score": 25,
+    "expected_level": "MEDIUM"
+  },
+  {
+    "case_id": "RISK-006",
+    "kind": "boundary",
+    "score": 26,
+    "expected_level": "MEDIUM"
+  },
+  {
+    "case_id": "RISK-007",
+    "kind": "boundary",
+    "score": 48,
+    "expected_level": "MEDIUM"
+  },
+  {
+    "case_id": "RISK-008",
+    "kind": "boundary",
+    "score": 49,
+    "expected_level": "MEDIUM"
+  },
+  {
+    "case_id": "RISK-009",
+    "kind": "boundary",
+    "score": 50,
+    "expected_level": "HIGH"
+  },
+  {
+    "case_id": "RISK-010",
+    "kind": "boundary",
+    "score": 51,
+    "expected_level": "HIGH"
+  },
+  {
+    "case_id": "RISK-011",
+    "kind": "boundary",
+    "score": 78,
+    "expected_level": "HIGH"
+  },
+  {
+    "case_id": "RISK-012",
+    "kind": "boundary",
+    "score": 79,
+    "expected_level": "HIGH"
+  },
+  {
+    "case_id": "RISK-013",
+    "kind": "boundary",
+    "score": 80,
+    "expected_level": "CRITICAL"
+  },
+  {
+    "case_id": "RISK-014",
+    "kind": "boundary",
+    "score": 81,
+    "expected_level": "CRITICAL"
+  },
+  {
+    "case_id": "RISK-015",
+    "kind": "boundary",
+    "score": 99,
+    "expected_level": "CRITICAL"
+  },
+  {
+    "case_id": "RISK-016",
+    "kind": "boundary",
+    "score": 100,
+    "expected_level": "CRITICAL"
+  },
+  {
+    "case_id": "RISK-017",
+    "kind": "assessment",
+    "hazard_type": "missing_ppe",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-018",
+    "kind": "assessment",
+    "hazard_type": "missing_ppe",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-019",
+    "kind": "assessment",
+    "hazard_type": "missing_ppe",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 20,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-020",
+    "kind": "assessment",
+    "hazard_type": "missing_ppe",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-021",
+    "kind": "assessment",
+    "hazard_type": "working_at_height",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-022",
+    "kind": "assessment",
+    "hazard_type": "working_at_height",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-023",
+    "kind": "assessment",
+    "hazard_type": "working_at_height",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 85,
+    "expected_level": "CRITICAL",
+    "expected_override": true,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-024",
+    "kind": "assessment",
+    "hazard_type": "working_at_height",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": true,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-025",
+    "kind": "assessment",
+    "hazard_type": "unprotected_edge",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-026",
+    "kind": "assessment",
+    "hazard_type": "unprotected_edge",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-027",
+    "kind": "assessment",
+    "hazard_type": "unprotected_edge",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 20,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-028",
+    "kind": "assessment",
+    "hazard_type": "unprotected_edge",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-029",
+    "kind": "assessment",
+    "hazard_type": "unsafe_scaffolding",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-030",
+    "kind": "assessment",
+    "hazard_type": "unsafe_scaffolding",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-031",
+    "kind": "assessment",
+    "hazard_type": "unsafe_scaffolding",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 20,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-032",
+    "kind": "assessment",
+    "hazard_type": "unsafe_scaffolding",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-033",
+    "kind": "assessment",
+    "hazard_type": "electrical_hazard",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-034",
+    "kind": "assessment",
+    "hazard_type": "electrical_hazard",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-035",
+    "kind": "assessment",
+    "hazard_type": "electrical_hazard",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 20,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-036",
+    "kind": "assessment",
+    "hazard_type": "electrical_hazard",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-037",
+    "kind": "assessment",
+    "hazard_type": "housekeeping",
+    "severity": 1,
+    "exposure": 1,
+    "probability": 1,
+    "confidence": 0.95,
+    "expected_score": 1,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": false
+  },
+  {
+    "case_id": "RISK-038",
+    "kind": "assessment",
+    "hazard_type": "housekeeping",
+    "severity": 5,
+    "exposure": 3,
+    "probability": 2,
+    "confidence": 0.79,
+    "expected_score": 30,
+    "expected_level": "MEDIUM",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-039",
+    "kind": "assessment",
+    "hazard_type": "housekeeping",
+    "severity": 5,
+    "exposure": 4,
+    "probability": 1,
+    "confidence": 0.2,
+    "expected_score": 20,
+    "expected_level": "LOW",
+    "expected_override": false,
+    "expected_review": true
+  },
+  {
+    "case_id": "RISK-040",
+    "kind": "assessment",
+    "hazard_type": "housekeeping",
+    "severity": 5,
+    "exposure": 5,
+    "probability": 4,
+    "confidence": 0.8,
+    "expected_score": 100,
+    "expected_level": "CRITICAL",
+    "expected_override": false,
+    "expected_review": false
+  }
+]

@@ -1,0 +1,113 @@
+{
+  "started_at": "2026-09-16T16:50:04.791238+00:00",
+  "provider": "deepseek",
+  "model": "deepseek-flash",
+  "maximum_requests": 2,
+  "sdk_retries": 0,
+  "validation_attempts": 1,
+  "requests_attempted": 2,
+  "incident_operations": 0,
+  "cases": [
+    {
+      "image": "01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "bytes": 2178623,
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "requests_attempted": 1,
+      "status": "failed",
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "estimated_cost_usd": null,
+      "latency_ms": 1716,
+      "error": {
+        "code": "invalid_credentials",
+        "message": "The selected provider rejected its API key. No provider fallback was used."
+      },
+      "call_records": [
+        {
+          "workflow_name": "inspection-analysis",
+          "provider": "deepseek",
+          "model_name": "deepseek-flash",
+          "prompt_version": "vision-v1",
+          "status": "FAILED",
+          "confidence": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "error_message": "invalid_credentials",
+          "started_at": "2026-09-16T16:50:06.143725+00:00",
+          "latency_ms": 1716
+        }
+      ],
+      "width": 5118,
+      "height": 7677,
+      "format": "JPEG",
+      "prompt_version": "vision-v1",
+      "processed_dimensions": [
+        1600,
+        2400
+      ],
+      "processed_sha256": "309c0a5720690a8492cbef62058ea1f45405873df5b009b947310d1bb58d23f3",
+      "processed_bytes": 954120,
+      "identical_bytes_to_saved_openai_case": true,
+      "image_bytes_verified_in_request": true,
+      "http_status": 401,
+      "elapsed_ms": 2280
+    },
+    {
+      "image": "02_obvious_hazard.jpg",
+      "sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "bytes": 2417773,
+      "provider": "deepseek",
+      "model": "deepseek-flash",
+      "requests_attempted": 1,
+      "status": "failed",
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "estimated_cost_usd": null,
+      "latency_ms": 578,
+      "error": {
+        "code": "invalid_credentials",
+        "message": "The selected provider rejected its API key. No provider fallback was used."
+      },
+      "call_records": [
+        {
+          "workflow_name": "inspection-analysis",
+          "provider": "deepseek",
+          "model_name": "deepseek-flash",
+          "prompt_version": "vision-v1",
+          "status": "FAILED",
+          "confidence": null,
+          "input_tokens": null,
+          "output_tokens": null,
+          "total_tokens": null,
+          "estimated_cost_usd": null,
+          "error_message": "invalid_credentials",
+          "started_at": "2026-09-16T16:50:08.073747+00:00",
+          "latency_ms": 578
+        }
+      ],
+      "width": 5614,
+      "height": 3733,
+      "format": "JPEG",
+      "prompt_version": "vision-v1",
+      "processed_dimensions": [
+        5614,
+        3733
+      ],
+      "processed_sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "processed_bytes": 2417773,
+      "identical_bytes_to_saved_openai_case": true,
+      "image_bytes_verified_in_request": true,
+      "http_status": 401,
+      "elapsed_ms": 653
+    }
+  ],
+  "env_unchanged": true,
+  "images_unchanged": true,
+  "completed_at": "2026-09-16T16:50:08.661381+00:00"
+}

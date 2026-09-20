@@ -1,0 +1,20 @@
+{
+  "provenance": "MOCKED/UNIT-TEST RESULT",
+  "description": "Artificial label sets only; no images or model inference.",
+  "truth": [
+    [
+      "missing_ppe",
+      "working_at_height"
+    ],
+    []
+  ],
+  "predicted": [
+    [
+      "missing_ppe",
+      "housekeeping"
+    ],
+    [
+      "electrical_hazard"
+    ]
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "total": {
+    "input_tokens": 42450,
+    "output_tokens": 17103,
+    "total_tokens": 59553,
+    "mean_latency_ms": 18293.9,
+    "median_latency_ms": 18162.5
+  },
+  "vision-v1": {
+    "input_tokens": 20130,
+    "output_tokens": 8474,
+    "total_tokens": 28604,
+    "mean_latency_ms": 17951.3,
+    "median_latency_ms": 18494.0
+  },
+  "vision-v2": {
+    "input_tokens": 22320,
+    "output_tokens": 8629,
+    "total_tokens": 30949,
+    "mean_latency_ms": 18636.5,
+    "median_latency_ms": 16906.5
+  },
+  "estimated_cost_usd": null,
+  "pricing_note": "No reliably applicable configured price produced a cost in any call record; no dollar estimate fabricated."
+}

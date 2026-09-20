@@ -1,0 +1,180 @@
+{
+  "started_at": "2026-09-16T15:02:10.001992+00:00",
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "maximum_requests": 2,
+  "sdk_retries": 0,
+  "validation_attempts": 1,
+  "requests_attempted": 1,
+  "incident_operations": 0,
+  "cases": [
+    {
+      "image": "01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "bytes": 2178623,
+      "provider": "openai",
+      "model": "gpt-5.6-sol",
+      "requests_attempted": 0,
+      "status": "blocked_preflight",
+      "input_tokens": null,
+      "output_tokens": null,
+      "total_tokens": null,
+      "estimated_cost_usd": null,
+      "latency_ms": null,
+      "error": {
+        "code": "invalid_image",
+        "message": "Use a valid JPEG, PNG or WebP image up to 25 megapixels."
+      },
+      "call_records": [],
+      "width": 5118,
+      "height": 7677,
+      "format": "JPEG",
+      "prompt_version": "vision-v1"
+    },
+    {
+      "image": "02_obvious_hazard.jpg",
+      "sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "bytes": 2417773,
+      "provider": "openai",
+      "model": "gpt-5.6-sol",
+      "requests_attempted": 1,
+      "status": "succeeded",
+      "input_tokens": 3861,
+      "output_tokens": 643,
+      "total_tokens": 4504,
+      "estimated_cost_usd": null,
+      "latency_ms": 18886,
+      "error": null,
+      "call_records": [
+        {
+          "workflow_name": "inspection-analysis",
+          "provider": "openai",
+          "model_name": "gpt-5.6-sol",
+          "prompt_version": "vision-v1",
+          "status": "SUCCEEDED",
+          "confidence": 0.78,
+          "input_tokens": 3861,
+          "output_tokens": 643,
+          "total_tokens": 4504,
+          "estimated_cost_usd": null,
+          "error_message": null,
+          "started_at": "2026-09-16T15:02:10.369819+00:00",
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 3858,
+          "pricing": null,
+          "response_id": "resp_0a1796d26d780cff016aaaaf75e71887d0b8e7155940c9ef58",
+          "returned_model": "gpt-5.6-sol",
+          "latency_ms": 18886
+        }
+      ],
+      "width": 5614,
+      "height": 3733,
+      "format": "JPEG",
+      "prompt_version": "vision-v1",
+      "image_bytes_verified_in_request": true,
+      "http_status": 200,
+      "analysis": {
+        "summary": "Two workers are handling reinforcing steel while wearing hard hats, high-visibility vests, and gloves. Safety eyewear is not visible. Several exposed and bent rebar ends are present near their upper bodies, but that concern is outside the permitted hazard categories.",
+        "hazards": [
+          {
+            "hazard_type": "missing_ppe",
+            "title": "Safety eyewear not visible during rebar work",
+            "description": "The workers appear to be handling or tying reinforcing steel, and no safety glasses or goggles are visible. Their eye areas are partly shadowed or angled away, so PPE absence cannot be confirmed from this image alone.",
+            "visual_evidence": [
+              "Both foreground workers are positioned with gloved hands at the reinforcing-steel cage.",
+              "No safety glasses or goggles are visible on either foreground worker.",
+              "The workers' eye areas are partly obscured by downward head position, helmet brims, and image angle."
+            ],
+            "confidence": 0.74,
+            "severity": 3,
+            "exposure": 3,
+            "probability": 2,
+            "risk_score": 18,
+            "risk_level": "LOW",
+            "recommended_actions": [
+              "Verify that suitable eye protection is being worn for the task.",
+              "Assess whether face protection is needed for cutting, tying, or handling projecting steel."
+            ],
+            "regulation_queries": [
+              "eye protection requirements for reinforcing steel work",
+              "PPE requirements for handling and tying rebar"
+            ]
+          }
+        ],
+        "overall_confidence": 0.78,
+        "requires_human_review": true,
+        "reasoning_notes": [
+          "Hard hats, high-visibility vests, and gloves are visibly worn by the two foreground workers.",
+          "Several projecting and bent rebar ends are visible near the workers, but exposed-rebar or impalement hazards are outside the allowed hazard categories and require human assessment.",
+          "The image does not clearly show an elevated work surface, open edge, scaffold, ladder, or electrical source.",
+          "Safety-eyewear visibility is limited by head position and helmet shadows; absence cannot be confirmed.",
+          "This image review does not establish that the site is safe or replace a formal inspection.",
+          "Overall visual confidence below 0.85. Human review required.",
+          "The model reports ambiguous visual evidence. Human review required.",
+          "Safety eyewear not visible during rebar work: Uncertain visual evidence (confidence below 0.85). Human review required.",
+          "Safety eyewear not visible during rebar work: Evidence must name the PPE item and explain what appears absent/not visible. Human review required."
+        ],
+        "provenance": null
+      },
+      "structured_output_valid": true,
+      "risk_engine_verified": true,
+      "risk_breakdowns": [
+        {
+          "severity": 3,
+          "exposure": 3,
+          "probability": 2,
+          "raw_score": 18,
+          "final_score": 18,
+          "risk_level": "LOW",
+          "confidence": 0.74,
+          "requires_human_review": true,
+          "policy_version": "safety-policy-1.0",
+          "overrides": [],
+          "formula": "Severity \u00d7 Exposure \u00d7 Probability (maximum 5 \u00d7 5 \u00d7 4 = 100). Confidence never discounts risk."
+        }
+      ],
+      "raw_observations": {
+        "summary": "Two workers are handling reinforcing steel while wearing hard hats, high-visibility vests, and gloves. Safety eyewear is not visible. Several exposed and bent rebar ends are present near their upper bodies, but that concern is outside the permitted hazard categories.",
+        "hazards": [
+          {
+            "severity": 3,
+            "exposure": 3,
+            "probability": 2,
+            "hazard_type": "missing_ppe",
+            "title": "Safety eyewear not visible during rebar work",
+            "description": "The workers appear to be handling or tying reinforcing steel, and no safety glasses or goggles are visible. Their eye areas are partly shadowed or angled away, so PPE absence cannot be confirmed from this image alone.",
+            "visual_evidence": [
+              "Both foreground workers are positioned with gloved hands at the reinforcing-steel cage.",
+              "No safety glasses or goggles are visible on either foreground worker.",
+              "The workers' eye areas are partly obscured by downward head position, helmet brims, and image angle."
+            ],
+            "confidence": 0.74,
+            "recommended_actions": [
+              "Verify that suitable eye protection is being worn for the task.",
+              "Assess whether face protection is needed for cutting, tying, or handling projecting steel."
+            ],
+            "regulation_queries": [
+              "eye protection requirements for reinforcing steel work",
+              "PPE requirements for handling and tying rebar"
+            ]
+          }
+        ],
+        "overall_confidence": 0.78,
+        "requires_human_review": true,
+        "ambiguity_detected": true,
+        "reasoning_notes": [
+          "Hard hats, high-visibility vests, and gloves are visibly worn by the two foreground workers.",
+          "Several projecting and bent rebar ends are visible near the workers, but exposed-rebar or impalement hazards are outside the allowed hazard categories and require human assessment.",
+          "The image does not clearly show an elevated work surface, open edge, scaffold, ladder, or electrical source.",
+          "Safety-eyewear visibility is limited by head position and helmet shadows; absence cannot be confirmed.",
+          "This image review does not establish that the site is safe or replace a formal inspection."
+        ]
+      },
+      "no_mock_fallback": true,
+      "elapsed_ms": 18904
+    }
+  ],
+  "env_unchanged": true,
+  "images_unchanged": true,
+  "completed_at": "2026-09-16T15:02:29.271438+00:00"
+}

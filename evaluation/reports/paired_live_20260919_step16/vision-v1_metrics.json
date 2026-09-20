@@ -1,0 +1,293 @@
+{
+  "scoring_schema_version": "vision-three-state-v1",
+  "dataset_cases": 10,
+  "successful_cases": 10,
+  "failed_cases": 0,
+  "coverage": 1.0,
+  "eligibility": {
+    "scoring_schema_version": "vision-three-state-v1",
+    "cases": 10,
+    "per_class": {
+      "missing_ppe": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 0
+      },
+      "working_at_height": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "unprotected_edge": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "unsafe_scaffolding": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 1
+      },
+      "electrical_hazard": {
+        "evaluable_count": 10,
+        "indeterminate_count": 0,
+        "positive_support": 2
+      },
+      "housekeeping": {
+        "evaluable_count": 9,
+        "indeterminate_count": 1,
+        "positive_support": 2
+      }
+    },
+    "confirmed_safe_case_ids": [
+      "v2_development_001",
+      "v2_development_004",
+      "v2_development_006"
+    ],
+    "unknown_status_case_ids": [
+      "v2_development_008"
+    ],
+    "full_exact_match_case_ids": [
+      "v2_development_001",
+      "v2_development_002",
+      "v2_development_003",
+      "v2_development_004",
+      "v2_development_005",
+      "v2_development_006",
+      "v2_development_007",
+      "v2_development_009",
+      "v2_development_010"
+    ]
+  },
+  "micro": {
+    "tp": 7,
+    "fp": 10,
+    "fn": 0,
+    "tn": 42,
+    "precision": 0.4117647058823529,
+    "recall": 1.0,
+    "f1": 0.5833333333333334,
+    "false_positive_rate": 0.19230769230769232,
+    "false_negative_rate": 0.0
+  },
+  "per_class": {
+    "missing_ppe": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "tn": 9,
+      "precision": 0.0,
+      "recall": null,
+      "f1": 0.0,
+      "false_positive_rate": 0.1,
+      "false_negative_rate": null,
+      "positive_support": 0,
+      "evaluable_sample_count": 10,
+      "indeterminate_count": 0,
+      "dataset_evaluable_count": 10,
+      "dataset_indeterminate_count": 0
+    },
+    "working_at_height": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "positive_support": 1,
+      "evaluable_sample_count": 10,
+      "indeterminate_count": 0,
+      "dataset_evaluable_count": 10,
+      "dataset_indeterminate_count": 0
+    },
+    "unprotected_edge": {
+      "tp": 1,
+      "fp": 2,
+      "fn": 0,
+      "tn": 7,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "false_positive_rate": 0.2222222222222222,
+      "false_negative_rate": 0.0,
+      "positive_support": 1,
+      "evaluable_sample_count": 10,
+      "indeterminate_count": 0,
+      "dataset_evaluable_count": 10,
+      "dataset_indeterminate_count": 0
+    },
+    "unsafe_scaffolding": {
+      "tp": 1,
+      "fp": 0,
+      "fn": 0,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "false_positive_rate": 0.0,
+      "false_negative_rate": 0.0,
+      "positive_support": 1,
+      "evaluable_sample_count": 10,
+      "indeterminate_count": 0,
+      "dataset_evaluable_count": 10,
+      "dataset_indeterminate_count": 0
+    },
+    "electrical_hazard": {
+      "tp": 2,
+      "fp": 3,
+      "fn": 0,
+      "tn": 5,
+      "precision": 0.4,
+      "recall": 1.0,
+      "f1": 0.5714285714285714,
+      "false_positive_rate": 0.375,
+      "false_negative_rate": 0.0,
+      "positive_support": 2,
+      "evaluable_sample_count": 10,
+      "indeterminate_count": 0,
+      "dataset_evaluable_count": 10,
+      "dataset_indeterminate_count": 0
+    },
+    "housekeeping": {
+      "tp": 2,
+      "fp": 4,
+      "fn": 0,
+      "tn": 3,
+      "precision": 0.3333333333333333,
+      "recall": 1.0,
+      "f1": 0.5,
+      "false_positive_rate": 0.5714285714285714,
+      "false_negative_rate": 0.0,
+      "positive_support": 2,
+      "evaluable_sample_count": 9,
+      "indeterminate_count": 1,
+      "dataset_evaluable_count": 9,
+      "dataset_indeterminate_count": 1
+    }
+  },
+  "macro": {
+    "precision": 0.5111111111111111,
+    "recall": 1.0,
+    "f1": 0.5952380952380952
+  },
+  "macro_defined_class_counts": {
+    "precision": 6,
+    "recall": 5,
+    "f1": 6
+  },
+  "macro_policy": "Unweighted mean of defined class values separately per metric; null denominators excluded. Zero-support F1 is 0 if FP>0, otherwise null; zero-support recall null. Not evidence of positive recognition.",
+  "full_exact_match": {
+    "evaluable_count": 9,
+    "correct_count": 2,
+    "accuracy": 0.2222222222222222
+  },
+  "partial_known_label_agreement": {
+    "evaluable_case_count": 1,
+    "correct_count": 1,
+    "rate": 1.0
+  },
+  "safe_scene": {
+    "confirmed_count": 3,
+    "correctly_predicted_count": 0,
+    "false_positive_count": 3,
+    "false_positive_rate": 1.0,
+    "unknown_status_scene_count": 1
+  },
+  "uncertainty_review": {
+    "status": "unavailable",
+    "expected_dataset_count": 2,
+    "evaluable_count": 0,
+    "unavailable_successful_count": 10,
+    "expected_evaluable_count": 0,
+    "correct_flags": 0,
+    "missed_flags": 0,
+    "recall": null,
+    "unnecessary_count": 0,
+    "unnecessary_denominator": 0,
+    "unnecessary_rate": null
+  },
+  "case_errors": [
+    {
+      "case_id": "v2_development_001",
+      "false_positive_classes": [
+        "housekeeping",
+        "unprotected_edge"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_002",
+      "false_positive_classes": [],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_003",
+      "false_positive_classes": [
+        "housekeeping"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_004",
+      "false_positive_classes": [
+        "electrical_hazard",
+        "housekeeping"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_005",
+      "false_positive_classes": [],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_006",
+      "false_positive_classes": [
+        "electrical_hazard"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_007",
+      "false_positive_classes": [
+        "electrical_hazard"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_008",
+      "false_positive_classes": [],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": [
+        "housekeeping"
+      ]
+    },
+    {
+      "case_id": "v2_development_009",
+      "false_positive_classes": [
+        "housekeeping",
+        "missing_ppe"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    },
+    {
+      "case_id": "v2_development_010",
+      "false_positive_classes": [
+        "unprotected_edge"
+      ],
+      "false_negative_classes": [],
+      "excluded_indeterminate_classes": []
+    }
+  ]
+}

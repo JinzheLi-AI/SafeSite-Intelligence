@@ -1,0 +1,34 @@
+{
+  "tests_passed": 80,
+  "existing_warnings": 2,
+  "api_attempts": 20,
+  "unique_cases": 20,
+  "all_successful": true,
+  "cached_reports_reproduce": true,
+  "json_valid": true,
+  "old_evidence_files_preserved": 12,
+  "old_evidence_sha256": {
+    "evaluation\\reports\\live_deepseek_smoke\\execution.lock": "b1b74544748c6e0cfb45f4b6f0735bd901f0df86e93b2f724528e742e28183d3",
+    "evaluation\\reports\\live_deepseek_smoke\\results.json": "cfc883f9bef4b099160b6972b4bc10c30309deea2a58c04e36c65b6874fe709c",
+    "evaluation\\reports\\live_openai_safe_preprocessed\\execution.lock": "4eb3246fe548572ff488f6c57049b9d8217243a692a7d809b1d0ae09246e97ac",
+    "evaluation\\reports\\live_openai_safe_preprocessed\\results.json": "a76da21a302c7058d7b98694207ccf545df24257b196281dd41cd53663ae447c",
+    "evaluation\\reports\\live_openai_smoke\\execution.lock": "a3caf1ecaeacfeaf8c3f01f7e325d4693d3375782dbea660fac83253fc198f7a",
+    "evaluation\\reports\\live_openai_smoke\\results.json": "f942d53c9616b7f4b98c09459f89e50f6b43494861ea6553773f0ab4777a8392",
+    "evaluation\\reports\\vision_openai_sol_20\\case_errors.json": "ae6fe81cd5e97bbae1631b622f44c7f16578796cbf7813ac47ccfceed65b0cfb",
+    "evaluation\\reports\\vision_openai_sol_20\\execution.lock": "25ba3aee5a0420166d5c55228fa7bfaf918086b52d6a81438f2628f853a1c2f2",
+    "evaluation\\reports\\vision_openai_sol_20\\metrics.json": "4e24c90c3373d4169aa76fa2a053d9a560db34383718db22c17dad61e0f20bfa",
+    "evaluation\\reports\\vision_openai_sol_20\\raw_results.json": "3f9a36c799688988a00186825e9ff536affc1c23243dccd6dabb1f895d593e91",
+    "evaluation\\reports\\vision_openai_sol_20\\summary.md": "92e6429939b9de450357483d9b300f5e04cdae57cd686ed1674745b06c1a79aa",
+    "evaluation\\reports\\vision_openai_sol_20\\verification.json": "f98d9c644104b7a372e8149a680312b0ac5d44cd1144ece44cc50032cd7f0672"
+  },
+  "report_sha256": {
+    "metrics.json": "20ca0ae96d6b5dc10b414194cbd17bd62c8484d6eb8bb7e0acd51827ac2dde96",
+    "case_errors.json": "dccb409bb6ece174f94b89efbbe55303bc421a2b0a8cbc6a09a44bfd9d866283",
+    "summary.md": "866a8be5663f52837ddc130ebc9003e46b6ab57f4a85538f172353c450974a15"
+  },
+  "independent_counts": {
+    "tp": 14,
+    "fp": 15,
+    "fn": 1
+  }
+}

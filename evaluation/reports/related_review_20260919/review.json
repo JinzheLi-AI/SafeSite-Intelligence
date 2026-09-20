@@ -1,0 +1,329 @@
+{
+  "review_date": "2026-09-19T04:49:05.779034+00:00",
+  "before_sha256": "e380c750bae302f96038bfc5145c110d92e2087fe7bd89b24cb6ca8bdc503b5e",
+  "after_sha256": "c42cca8f370972b04bfddfe34f899a090bc673f2ba76dc5404414c14664415ed",
+  "changed_fields": [
+    "cases[*].related_image_review_status"
+  ],
+  "records": [
+    {
+      "case_id": "v2_development_001",
+      "source_identifier": "commons:pageid:28209761",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reconstruction_of_Peterburi_tee_040.JPG",
+      "site_id": "Tallinn:Ulemiste-transport-node/Peterburi-tee-reconstruction",
+      "scene_id": null,
+      "group": "dev-only:Dmitry-G:electrical-installations-series",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\01-commons-api.json",
+      "evidence_sha256": "0823fe809d94cd238fd51ebe0dfd6ad3335c9caac1547e837b93f48fb2713cf8",
+      "findings": "B versus 003: outdoor Peterburi tee reconstruction, Tallinn, 2013-09-08 versus Kivila 11 indoor apartment renovation, 2012-01-24. C versus 002: shared Dmitry G photographer; lamppost site unknown. Keep source-series reservation.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_002",
+      "source_identifier": "commons:pageid:17040673",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Lamppost_wiring_-_plastic_bags_are_used_as_wire_nuts_and_neutral_wire_is_not_grounded.JPG",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Dmitry-G:electrical-installations-series",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\02-commons-api.json",
+      "evidence_sha256": "341c4fac899fb4eacfb946df8c550af5d511d8605d779062908f736dbfffee90",
+      "findings": "C: Dmitry G, 2011-10-19 lamppost wiring detail; distinct depicted subject from 001/003 but common physical site cannot be ruled out for 001. No location in archive. Keep unknown and shared reservation.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_003",
+      "source_identifier": "commons:pageid:18157020",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kivila_11_-_former_bathroom,_coming_jacuzzi.JPG",
+      "site_id": "Kivila-11:apartment-renovation",
+      "scene_id": null,
+      "group": "dev-only:Dmitry-G:electrical-installations-series",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\03-commons-api.json",
+      "evidence_sha256": "fed9e4332a3b82400216a2812da7165d16e3c45914277153ca8d84f28050c192",
+      "findings": "B versus 001: Kivila 11 interior apartment renovation, 2012-01-24, distinct location/context. C versus 002: photographer shared; 002 site unresolved. Keep reservation.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_004",
+      "source_identifier": "commons:pageid:141242382",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20231121_093337_Baustromverteiler_in_Osnabr%C3%BCck.jpg",
+      "site_id": "Klinikum-Osnabrueck:Finkenhuegel",
+      "scene_id": null,
+      "group": "dev-only:Klinikum-Osnabrueck:temporary-power-2023",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\04-commons-api.json",
+      "evidence_sha256": "b8d626c2ce27ae48123abdb8342d2a9ccfa1810d014690070bed8d482a096f1e",
+      "findings": "Archived description identifies Klinikum Osnabrueck, categories Finkenhuegel, Ramsch, 2023-11-21. Orange outdoor cabinet/trees visually distinct. No matching known site/source in other registered collections; unrecorded historical site relationships D.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_005",
+      "source_identifier": "commons:pageid:179025422",
+      "source_url": "https://commons.wikimedia.org/wiki/File:11_Scaffolding_safety_plastic_net_-_polyethylene_material_nets_at_construction_site_in_Makati_Manila.jpg",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Tupungato:Philippines-construction-2017",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\05-commons-api.json",
+      "evidence_sha256": "0f54624df4069e405e6798fb6b22a77209c8b70592c81211588bdf0cbc4d8507",
+      "findings": "B versus 009: archive explicitly says Makati/Greater Manila, 2017-12-07, high-rise facade; 009 is Banaue/Ifugao, 2017-11-26. Same Tupungato photographer, different documented locations. Exact building unknown; retain conservative shared reservation.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_006",
+      "source_identifier": "commons:pageid:6489578",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baustromverteiler.jpg",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Thiemo-Schuff:THW-distributor-2007",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\06-commons-api.json",
+      "evidence_sha256": "cdc1bc0b4c90976925945ac0e0ff77b23f8c0468b7e221d04f004e2b194ce4f0",
+      "findings": "Thiemo Schuff, THW distribution equipment, 2007-10-07. Blue/white box on paving visually differs from 007 yellow box and 008 facade. Site unspecified; physical-site relationship D. Retain THW series reservation; archive notes derivative versions so future derivatives must be excluded.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_007",
+      "source_identifier": "commons:pageid:130047017",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Baustromverteiler,_Dreifachwandabdichtung.jpg",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Leo-Miregalitheo:construction-distributors-2023",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\07-commons-api.json",
+      "evidence_sha256": "87061ff298e328806c26caf1502f6ac52dc6ce62503202291931f8a65a8444bc",
+      "findings": "Leo Miregalitheo, 2023, yellow portable distribution box on sheeting beside wall/paving. Different source and depicted scene from 008 (Patrick Oberdoerfer, 2017, multi-storey facade). B at visible scene level; common physical site D. Saved notes broadly match 007, copied into 008.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_008",
+      "source_identifier": "commons:pageid:138154067",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Kabelbr%C3%BCcken.jpg",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Patrick-Oberdoerfer:construction-power-2017",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\08-commons-api.json",
+      "evidence_sha256": "6bede96145b9ee3de56fabc5a1fe7249f7da3b894c36647eae48a1432b13fca9",
+      "findings": "Patrick Oberdoerfer, 2017-09-28, description cable bridges for construction power. Actual image: scaffolded multi-storey facade, elevated cable-support structure, red/white KBS boxes, foreground flexible conduit. B versus 007 visible scene; common site D. Annotation notes incorrectly describe 007; correction requires user approval.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_009",
+      "source_identifier": "commons:pageid:134276899",
+      "source_url": "https://commons.wikimedia.org/wiki/File:10_Construction_worker_safety_-_unsafe_rooftop_worker_wearing_flip_flops.jpg",
+      "site_id": null,
+      "scene_id": null,
+      "group": "dev-only:Tupungato:Philippines-construction-2017",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\09-commons-api.json",
+      "evidence_sha256": "5bf53e81b6cc5d1a638e1ef684f9f0b006fbe65ef6cf8704efab4e3a4ea15c38",
+      "findings": "B versus 005: archive explicitly locates rooftop in Banaue/Ifugao, 2017-11-26, distinct from Makati high-rise dated 2017-12-07. Shared Tupungato author only; retain conservative series reservation. Exact building/site ID remains unknown.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    },
+    {
+      "case_id": "v2_development_010",
+      "source_identifier": "commons:pageid:42037287",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Safety_officer_moves_a_electrical_cord_in_Israel_(5307790955).jpg",
+      "site_id": "Tel-Nof-Air-Base:new-dining-facility",
+      "scene_id": null,
+      "group": "dev-only:USACE:Tel-Nof-dining-construction-2010",
+      "evidence_archive": "[LOCAL_HOME]\\Documents\\Codex\\2026-09-18\\referenced-chatgpt-conversation-this-is-an\\outputs\\safesite-vision-v2-collection\\provenance\\10-commons-api.json",
+      "evidence_sha256": "0000b1b61e13a1ffefde0227ab7585f878d40954c149bef0d148476217af1f5c",
+      "findings": "USACE/Carol E. Davis, 2010-12-12, explicitly Tel Nof Air Base new dining facility. Interior stairs and worker; no matching registered source/site. Archive includes Flickr source ID 5307790955. Unrecorded historical site relationships D.",
+      "status": "reviewed",
+      "review_method": "Offline source metadata and visual relationship inspection by assistant; not human hazard relabeling",
+      "cross_split": "No exact or visually identified repeated scene; historical site/source metadata incomplete; held-out empty. Future candidates must be screened against reserved groups."
+    }
+  ],
+  "validation": {
+    "total_cases": 10,
+    "images_present": 10,
+    "missing_images": 0,
+    "reviewed": 10,
+    "benchmark_ready": 10,
+    "duplicate_images": 0,
+    "errors": [],
+    "warnings": [
+      "v2_development_002: site unknown; independence cannot be guaranteed",
+      "v2_development_005: site unknown; independence cannot be guaranteed",
+      "v2_development_006: site unknown; independence cannot be guaranteed",
+      "v2_development_007: site unknown; independence cannot be guaranteed",
+      "v2_development_008: site unknown; independence cannot be guaranteed",
+      "v2_development_009: site unknown; independence cannot be guaranteed"
+    ],
+    "frozen": false
+  },
+  "local_inventory": [
+    {
+      "path": "evaluation\\fixtures\\live_smoke\\01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e"
+    },
+    {
+      "path": "evaluation\\fixtures\\live_smoke\\02_obvious_hazard.jpg",
+      "sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611"
+    },
+    {
+      "path": "evaluation\\fixtures\\live_smoke\\03_ambiguous.jpg",
+      "sha256": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6"
+    },
+    {
+      "path": "evaluation\\fixtures\\live_smoke\\04_multi_hazard.jpg",
+      "sha256": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\01.jpg",
+      "sha256": "45c1659018c5e5971e73d80f6f0c303b2d42965b020334e444663d5c3775408b"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\02.jpg",
+      "sha256": "876b591b9ce458004875fce6b84f5b18cecef36e501b8564fa85597c01483d5c"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\03.jpg",
+      "sha256": "47a6b33dc62ce27bc4922e8ba6375cd30dda64f74059e73962b9a9bb15155538"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\04.jpg",
+      "sha256": "f0106a6b3da059e1fd42c38fd3afa336df18bb702aef7596bd87dbd4b479bd61"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\05.jpg",
+      "sha256": "3450154516d5003d28d6441c4d39020d5f6cafcf34f57b1952bca1de8a10c1a4"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\06.jpg",
+      "sha256": "88c113d4ff8c37031eb372967808f1822e0ed97e69f7ea1cf677db278fc55b09"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\07.jpg",
+      "sha256": "bd5c4ebf6933269c1b6efab51f6d2e0faeaa90ccd17550e375523e550960c77f"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\08.jpg",
+      "sha256": "698c424974350e9c090bd24d8fbbf5fdfe204baf7456656ab63d57e13e296277"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\09.jpg",
+      "sha256": "9ed66ff6423ef8df7c41addeba554d31860a804f06fc635f3988778c70eb0bf6"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\10.jpg",
+      "sha256": "f909dc1ed25109dcfd678305a3459b012813d10193cd4bb62861b37654387135"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\11.jpg",
+      "sha256": "6ea2074a087d0ee314b2d329c0267b0102ceded263f697f219d875abbdfe46fe"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\12.jpg",
+      "sha256": "4d0f4fc16202977e5861db1cd72e6d5522fab8b0fc77523e64cceee6e3c5941f"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\13.jpg",
+      "sha256": "a462f069ec6ec26840e615c16d7be72d1315ab982c38134314f976f9b87d54f5"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\14.jpg",
+      "sha256": "1e263c9a442de8dac19e34dfe51051be6d81ef99f822478a928191153f9c017a"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\15.jpg",
+      "sha256": "ac036db5ba7df8c5770d47b223ad18676ae2a6166e9803dc4b29b0e81208bc7f"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_pilot\\16.jpg",
+      "sha256": "22b5753c9db4e1b8fb4881be9659efac43db5b0ab7de89bd1dcc89aab043c78a"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\0ff09fde744df4eb7f5c5d8b073cb6ff4623fe1baa573a037539009a5f0a9a3b.jpg",
+      "sha256": "0ff09fde744df4eb7f5c5d8b073cb6ff4623fe1baa573a037539009a5f0a9a3b"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\1d0191a7b220df2aad87f25a2fc461b2e5ddd11787c45b0108e1968db17b7132.jpg",
+      "sha256": "1d0191a7b220df2aad87f25a2fc461b2e5ddd11787c45b0108e1968db17b7132"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\2424691fffcd118bf21625b446986bd11a1afdef9974b24e77772d5a9ca3c760.jpg",
+      "sha256": "2424691fffcd118bf21625b446986bd11a1afdef9974b24e77772d5a9ca3c760"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\3adf636b35d1a293f458c6a77eca2e1de872edf0fff20fb4393d390dece16ffa.jpg",
+      "sha256": "3adf636b35d1a293f458c6a77eca2e1de872edf0fff20fb4393d390dece16ffa"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\7401b14257e8fbd28b7a3f528ddb059c8b79163e201fbfe72d12f09695a52987.jpg",
+      "sha256": "7401b14257e8fbd28b7a3f528ddb059c8b79163e201fbfe72d12f09695a52987"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\76794757c74f320e5eb426f6efd0f11bb0918345b68105322ba995f638277f8b.jpg",
+      "sha256": "76794757c74f320e5eb426f6efd0f11bb0918345b68105322ba995f638277f8b"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\8f8da3fd35fde4d0446b03020a2895d33339ed2cb9203787a61d6f8860ac940b.jpg",
+      "sha256": "8f8da3fd35fde4d0446b03020a2895d33339ed2cb9203787a61d6f8860ac940b"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\cd639ceab1204a16dfd0c8acc191a80a314a4a3d9f519908a34146fe3ca1dd69.jpg",
+      "sha256": "cd639ceab1204a16dfd0c8acc191a80a314a4a3d9f519908a34146fe3ca1dd69"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\ec3f2762cba15938f0cee4ff0e9c5ab003b81256fa5d44ed6d746d24a50b7b91.jpg",
+      "sha256": "ec3f2762cba15938f0cee4ff0e9c5ab003b81256fa5d44ed6d746d24a50b7b91"
+    },
+    {
+      "path": "evaluation\\fixtures\\vision_v2\\development\\fbfd230b416044a7919c81f26bf501e8867a90ff9b24be50a4bf0f6cfa54ebdf.jpg",
+      "sha256": "fbfd230b416044a7919c81f26bf501e8867a90ff9b24be50a4bf0f6cfa54ebdf"
+    },
+    {
+      "path": "backend\\data\\labeling-ui.png",
+      "sha256": "80c208c37745534e9eae1ab2d2c6f449baf93cda6e7d8f1e87070323e4cc33d7"
+    },
+    {
+      "path": "backend\\data\\knowledge\\electrical-layout.png",
+      "sha256": "1b47c5854bdc2143a0d5d2fc0577eecb3b346982bddafb078f36912fc696fdf3"
+    },
+    {
+      "path": "backend\\data\\knowledge\\handbook-layout.png",
+      "sha256": "19c5573cbdc132caae65849207ac8e3ac0618b475928625380d52832494f6849"
+    },
+    {
+      "path": "backend\\data\\knowledge\\height-layout.png",
+      "sha256": "a1913b2eb08d2cde3b61b55eb497a9a6d572efaf9c07765e07198ce4a7c79b64"
+    },
+    {
+      "path": "docs\\screenshots\\closed-case.png",
+      "sha256": "d2da67425359b70897789d4435347aecaa8be4c0481a1d22799fecd7381ab1a0"
+    },
+    {
+      "path": "docs\\screenshots\\dashboard.png",
+      "sha256": "79268c0d3416e087fc2e502f9079d62bd89c4e70eb007a0a78d6249d95fff419"
+    },
+    {
+      "path": "docs\\screenshots\\findings.png",
+      "sha256": "ec600c8d142dc1dad47d67abe7b3df3e2ed69517ea638afc7c422b4a3f8e1a23"
+    },
+    {
+      "path": "docs\\screenshots\\inspection.png",
+      "sha256": "c3e527d18d83cd63fe16affe2900f8c5ff5e9370c56a50f5ce811ced2773946b"
+    },
+    {
+      "path": "docs\\screenshots\\mobile-knowledge.png",
+      "sha256": "2b21dc05224438589f787818b2636f6154c6012ac345441d6275e04245f741c6"
+    }
+  ],
+  "cross_collection_duplicate_matches": [],
+  "preserved_file_count": 97,
+  "heldout_imported_images": 0
+}

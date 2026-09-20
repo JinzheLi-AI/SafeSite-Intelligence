@@ -1,0 +1,12 @@
+{
+  "case_id": "v2_development_008",
+  "approved_by": "User explicitly approved correction in this conversation",
+  "timestamp": "2026-09-19T04:55:41.936447+00:00",
+  "changed_field": "evidence_notes",
+  "original_notes": "A temporary electrical distribution box is positioned on loose plastic sheeting beside a paved area. Power cables extend across the ground, and loose plastic sheeting and a wooden board are scattered around the equipment. These visible conditions create potential trip hazards and support a housekeeping hazard. The electrical sockets and connections do not show clearly exposed conductors, damaged insulation, or another specific electrical defect. No other supported hazard is identified.",
+  "replacement_notes": "A scaffolded multi-storey facade is visible with overhead cable-support structures and red-and-white cabinets behind temporary fencing. A flexible conduit loops on the gravel and grass beside the paved edge in the foreground. The photograph does not show the yellow portable distribution box on plastic sheeting described in the previous note. Whether the conduit obstructs a pedestrian route is not established by the image alone; the existing housekeeping judgment requires a case-specific supporting rationale.",
+  "image_path": "fixtures/vision_v2/development/cd639ceab1204a16dfd0c8acc191a80a314a4a3d9f519908a34146fe3ca1dd69.jpg",
+  "image_sha256": "cd639ceab1204a16dfd0c8acc191a80a314a4a3d9f519908a34146fe3ca1dd69",
+  "verification": "Actual full-size local image inspected. Scaffolded facade, overhead supports, red/white cabinets and foreground conduit match draft; previous yellow-box/plastic-sheeting description does not. No hazard label adjudication performed.",
+  "manifest_before_sha256": "c42cca8f370972b04bfddfe34f899a090bc673f2ba76dc5404414c14664415ed"
+}

@@ -1,0 +1,108 @@
+{
+  "status": "BLOCKED_INSUFFICIENT_HUMAN_REVIEWED_DATA",
+  "audit_date": "2026-09-17",
+  "reviewed_cases": 0,
+  "manifest_cases": 72,
+  "label_status_counts": {
+    "placeholder": 72
+  },
+  "manifest_sha256": "fb47e6cab76aac1da319511d5b3931759184608bce94a5ef910e9f2e16ac9703",
+  "manifests_directory_exists": false,
+  "images": [
+    {
+      "image_path": "fixtures/live_smoke/01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "bytes": 2178623,
+      "human_label_status": "unlabeled",
+      "dimensions": [
+        5118,
+        7677
+      ],
+      "format": "JPEG",
+      "processed_dimensions": [
+        1600,
+        2400
+      ],
+      "processed_sha256": "309c0a5720690a8492cbef62058ea1f45405873df5b009b947310d1bb58d23f3",
+      "preprocessing_valid": true
+    },
+    {
+      "image_path": "fixtures/live_smoke/02_obvious_hazard.jpg",
+      "sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "bytes": 2417773,
+      "human_label_status": "unlabeled",
+      "dimensions": [
+        5614,
+        3733
+      ],
+      "format": "JPEG",
+      "processed_dimensions": [
+        5614,
+        3733
+      ],
+      "processed_sha256": "51fe0ae6c2a7c41486af2785fd905db62607d4dcb8c90c47d6291d4d8ec59611",
+      "preprocessing_valid": true
+    },
+    {
+      "image_path": "fixtures/live_smoke/03_ambiguous.jpg",
+      "sha256": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6",
+      "bytes": 1728392,
+      "human_label_status": "unlabeled",
+      "dimensions": [
+        5184,
+        3888
+      ],
+      "format": "JPEG",
+      "processed_dimensions": [
+        5184,
+        3888
+      ],
+      "processed_sha256": "908c5a8d2302541b8faba196d4257c80659d3b45970919cb73f0d559a4df48e6",
+      "preprocessing_valid": true
+    },
+    {
+      "image_path": "fixtures/live_smoke/04_multi_hazard.jpg",
+      "sha256": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983",
+      "bytes": 1064760,
+      "human_label_status": "unlabeled",
+      "dimensions": [
+        4924,
+        3283
+      ],
+      "format": "JPEG",
+      "processed_dimensions": [
+        4924,
+        3283
+      ],
+      "processed_sha256": "b9422fb34c37d2522af6f1aec2507eb6a7bbb86a99fdc614797beb1ee0245983",
+      "preprocessing_valid": true
+    }
+  ],
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "prompt_version": "vision-v1",
+  "key_present": true,
+  "billing_status": "not_checked_no_api_requests",
+  "benchmark_api_calls": 0,
+  "expected_eligible_calls": 0,
+  "formal_minimum": 20,
+  "preferred_target": [
+    30,
+    50
+  ],
+  "real_image_files": 4,
+  "unique_image_hashes": 4,
+  "unlabeled_image_files": 4,
+  "reviewed_safe_scenes": 0,
+  "reviewed_ambiguous_cases": 0,
+  "reviewed_multi_hazard_cases": 0,
+  "metrics": null,
+  "provider_failures": null,
+  "usage": {
+    "input_tokens": null,
+    "output_tokens": null,
+    "total_tokens": null,
+    "average_latency_ms": null,
+    "estimated_cost_usd": null
+  }
+}

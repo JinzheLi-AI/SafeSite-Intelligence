@@ -1,0 +1,497 @@
+[
+  {
+    "query_id": "RAG-001",
+    "hazard_type": "working_at_height",
+    "query": "What safeguards apply to work on an elevated platform?",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-002",
+    "hazard_type": "working_at_height",
+    "query": "Worker near open elevated slab without fall arrest protection",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-003",
+    "hazard_type": "working_at_height",
+    "query": "Safe access and work at height using ladders",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-004",
+    "hazard_type": "working_at_height",
+    "query": "Selection and inspection of safety harness for elevated work",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-005",
+    "hazard_type": "working_at_height",
+    "query": "Fall prevention when working on a roof",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-006",
+    "hazard_type": "working_at_height",
+    "query": "Working platform and fall arrest system safety",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-007",
+    "hazard_type": "unprotected_edge",
+    "query": "Guardrails to prevent falls at open edges",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-008",
+    "hazard_type": "unprotected_edge",
+    "query": "Floor openings require suitable covers and fencing",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-009",
+    "hazard_type": "unprotected_edge",
+    "query": "Temporary edge protection around elevated working platform",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-010",
+    "hazard_type": "unprotected_edge",
+    "query": "Protect workers near open sides of a slab",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-011",
+    "hazard_type": "unprotected_edge",
+    "query": "Access to a platform with an incomplete perimeter barrier",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-012",
+    "hazard_type": "unprotected_edge",
+    "query": "Fencing and guardrails around floor openings",
+    "expected_source_families": [
+      "height"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-013",
+    "hazard_type": "missing_ppe",
+    "query": "Safety helmet inspection before use",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-014",
+    "hazard_type": "missing_ppe",
+    "query": "Replace a safety helmet after impact or damage",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-015",
+    "hazard_type": "missing_ppe",
+    "query": "Safety helmet chin strap and correct fit",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-016",
+    "hazard_type": "missing_ppe",
+    "query": "Selection of suitable safety helmets for construction workers",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-017",
+    "hazard_type": "missing_ppe",
+    "query": "Storage and maintenance of safety helmets",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-018",
+    "hazard_type": "missing_ppe",
+    "query": "Inspect safety helmet shell and suspension",
+    "expected_source_families": [
+      "helmet"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-019",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Metal scaffold bracing and stability requirements",
+    "expected_source_families": [
+      "metal"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-020",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Inspection of metal scaffolds by a competent person",
+    "expected_source_families": [
+      "metal"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-021",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Bamboo scaffold working platforms and guardrails",
+    "expected_source_families": [
+      "bamboo"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-022",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Safe dismantling of bamboo scaffolding",
+    "expected_source_families": [
+      "bamboo"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-023",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Metal scaffold foundations and base plates",
+    "expected_source_families": [
+      "metal"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-024",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Bamboo scaffold ties and support",
+    "expected_source_families": [
+      "bamboo"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-025",
+    "hazard_type": "electrical_hazard",
+    "query": "Damaged power cords and exposed live electrical parts",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-026",
+    "hazard_type": "electrical_hazard",
+    "query": "Electrical tools in wet conditions",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-027",
+    "hazard_type": "electrical_hazard",
+    "query": "Check portable electrical equipment before use",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-028",
+    "hazard_type": "electrical_hazard",
+    "query": "Isolation of electricity before repairs",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-029",
+    "hazard_type": "electrical_hazard",
+    "query": "Prevent electric shock with proper earthing",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-030",
+    "hazard_type": "electrical_hazard",
+    "query": "Electrical plugs and cable insulation safety",
+    "expected_source_families": [
+      "electrical"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-031",
+    "hazard_type": "housekeeping",
+    "query": "Keep access routes and passages clear of obstructions",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-032",
+    "hazard_type": "housekeeping",
+    "query": "Remove rubbish and waste from the construction site",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-033",
+    "hazard_type": "housekeeping",
+    "query": "Good housekeeping prevents trip hazards",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-034",
+    "hazard_type": "housekeeping",
+    "query": "Materials blocking safe passage at the workplace",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-035",
+    "hazard_type": "housekeeping",
+    "query": "Clean and tidy working area and access",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-036",
+    "hazard_type": "housekeeping",
+    "query": "Store materials safely and avoid blocked walkways",
+    "expected_source_families": [
+      "handbook"
+    ],
+    "should_return_evidence": true,
+    "label_status": "draft",
+    "notes": "Author-curated source-family relevance; independent passage judgments pending."
+  },
+  {
+    "query_id": "RAG-037",
+    "hazard_type": "missing_ppe",
+    "query": "Chocolate cake baking temperature",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-038",
+    "hazard_type": "working_at_height",
+    "query": "Planetary orbit of Neptune",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-039",
+    "hazard_type": "unprotected_edge",
+    "query": "Quarterly exchange rate forecast",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-040",
+    "hazard_type": "unsafe_scaffolding",
+    "query": "Classical music violin tuning",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-041",
+    "hazard_type": "electrical_hazard",
+    "query": "Restaurant opening hours",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-042",
+    "hazard_type": "housekeeping",
+    "query": "Football championship winners",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-043",
+    "hazard_type": "missing_ppe",
+    "query": "Cloud software subscription billing",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-044",
+    "hazard_type": "working_at_height",
+    "query": "Ancient poetry authorship",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-045",
+    "hazard_type": "unprotected_edge",
+    "query": "Marine coral taxonomy",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Out-of-domain negative; same hazard expansion as relevant queries."
+  },
+  {
+    "query_id": "RAG-046",
+    "hazard_type": "working_at_height",
+    "query": "Fall protection at an open elevated edge",
+    "jurisdiction": "CN",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Unsupported jurisdiction: no eligible pilot corpus."
+  },
+  {
+    "query_id": "RAG-047",
+    "hazard_type": "working_at_height",
+    "query": "Fall protection at an open elevated edge",
+    "jurisdiction": "SG",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Unsupported jurisdiction: no eligible pilot corpus."
+  },
+  {
+    "query_id": "RAG-048",
+    "hazard_type": "working_at_height",
+    "query": "Fall protection at an open elevated edge",
+    "jurisdiction": "MY",
+    "should_return_evidence": false,
+    "label_status": "draft",
+    "notes": "Unsupported jurisdiction: no eligible pilot corpus."
+  }
+]

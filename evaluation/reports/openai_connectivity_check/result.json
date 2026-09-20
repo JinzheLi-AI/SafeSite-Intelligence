@@ -1,0 +1,105 @@
+{
+  "attempts": 1,
+  "success": true,
+  "requested_model": "gpt-5.6-sol",
+  "prompt_version": "vision-v1",
+  "image_bytes_verified": true,
+  "analysis": {
+    "summary": "Two workers are visible at a construction site wearing hard hats; one also wears a high-visibility vest and the other wears gloves. Eye protection does not appear to be worn, although the activity shown is limited to reviewing documents and handling a radio, so the need for eye protection cannot be determined from the image alone.",
+    "hazards": [
+      {
+        "hazard_type": "missing_ppe",
+        "title": "Possible missing eye protection",
+        "description": "Neither worker appears to be wearing safety glasses. Clear protective glasses are visibly hanging near the male worker's waist, but the image does not show an active task or exposure that establishes whether eye protection is required.",
+        "visual_evidence": [
+          "Both workers' eyes and faces are visible without safety glasses being worn.",
+          "A pair of clear protective glasses is hanging near the male worker's waist.",
+          "The workers appear to be reviewing a clipboard and handling a handheld radio rather than performing a visibly hazardous task."
+        ],
+        "confidence": 0.78,
+        "severity": 2,
+        "exposure": 2,
+        "probability": 2,
+        "risk_score": 8,
+        "risk_level": "LOW",
+        "recommended_actions": [
+          "Confirm the site's eye-protection requirements for this area and activity.",
+          "Wear suitable eye protection if required by the task or designated site zone."
+        ],
+        "regulation_queries": [
+          "construction site eye protection requirements",
+          "personal protective equipment hazard assessment eye protection"
+        ]
+      }
+    ],
+    "overall_confidence": 0.78,
+    "requires_human_review": true,
+    "reasoning_notes": [
+      "The background is substantially blurred, limiting assessment of ground conditions and nearby hazards.",
+      "The image does not show enough task context to determine whether eye protection is mandatory.",
+      "No visible elevated work area, open edge, scaffold, or electrical equipment supports additional hazard findings.",
+      "Overall visual confidence below 0.85. Human review required.",
+      "The model reports ambiguous visual evidence. Human review required.",
+      "Possible missing eye protection: Uncertain visual evidence (confidence below 0.85). Human review required."
+    ],
+    "provenance": null
+  },
+  "raw_visual_output": {
+    "summary": "Two workers are visible at a construction site wearing hard hats; one also wears a high-visibility vest and the other wears gloves. Eye protection does not appear to be worn, although the activity shown is limited to reviewing documents and handling a radio, so the need for eye protection cannot be determined from the image alone.",
+    "hazards": [
+      {
+        "severity": 2,
+        "exposure": 2,
+        "probability": 2,
+        "hazard_type": "missing_ppe",
+        "title": "Possible missing eye protection",
+        "description": "Neither worker appears to be wearing safety glasses. Clear protective glasses are visibly hanging near the male worker's waist, but the image does not show an active task or exposure that establishes whether eye protection is required.",
+        "visual_evidence": [
+          "Both workers' eyes and faces are visible without safety glasses being worn.",
+          "A pair of clear protective glasses is hanging near the male worker's waist.",
+          "The workers appear to be reviewing a clipboard and handling a handheld radio rather than performing a visibly hazardous task."
+        ],
+        "confidence": 0.78,
+        "recommended_actions": [
+          "Confirm the site's eye-protection requirements for this area and activity.",
+          "Wear suitable eye protection if required by the task or designated site zone."
+        ],
+        "regulation_queries": [
+          "construction site eye protection requirements",
+          "personal protective equipment hazard assessment eye protection"
+        ]
+      }
+    ],
+    "overall_confidence": 0.78,
+    "requires_human_review": true,
+    "ambiguity_detected": true,
+    "reasoning_notes": [
+      "The background is substantially blurred, limiting assessment of ground conditions and nearby hazards.",
+      "The image does not show enough task context to determine whether eye protection is mandatory.",
+      "No visible elevated work area, open edge, scaffold, or electrical equipment supports additional hazard findings."
+    ]
+  },
+  "call_records": [
+    {
+      "workflow_name": "inspection-analysis",
+      "provider": "openai",
+      "model_name": "gpt-5.6-sol",
+      "prompt_version": "vision-v1",
+      "status": "SUCCEEDED",
+      "confidence": null,
+      "input_tokens": 3813,
+      "output_tokens": 501,
+      "total_tokens": 4314,
+      "estimated_cost_usd": null,
+      "error_message": null,
+      "started_at": "2026-09-17T15:50:51.991144+00:00",
+      "cached_input_tokens": 0,
+      "cache_write_tokens": 3810,
+      "pricing": null,
+      "response_id": "resp_00229700e6d2e81c016aac0c5f3b0887d0b7635e7d244cb679",
+      "returned_model": "gpt-5.6-sol",
+      "latency_ms": 12328
+    }
+  ],
+  "original_unchanged": true
+}

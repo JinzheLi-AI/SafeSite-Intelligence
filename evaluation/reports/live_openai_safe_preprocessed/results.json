@@ -1,0 +1,158 @@
+{
+  "started_at": "2026-09-16T15:57:45.139168+00:00",
+  "provider": "openai",
+  "model": "gpt-5.6-sol",
+  "maximum_requests": 1,
+  "sdk_retries": 0,
+  "validation_attempts": 1,
+  "requests_attempted": 1,
+  "incident_operations": 0,
+  "cases": [
+    {
+      "image": "01_safe.jpg",
+      "sha256": "7682ce9f5acadbefeb92264bbf1f7ba15c781c2e85e4d47370104a1644b2c72e",
+      "bytes": 2178623,
+      "provider": "openai",
+      "model": "gpt-5.6-sol",
+      "requests_attempted": 1,
+      "status": "succeeded",
+      "input_tokens": 3813,
+      "output_tokens": 729,
+      "total_tokens": 4542,
+      "estimated_cost_usd": null,
+      "latency_ms": 15879,
+      "error": null,
+      "call_records": [
+        {
+          "workflow_name": "inspection-analysis",
+          "provider": "openai",
+          "model_name": "gpt-5.6-sol",
+          "prompt_version": "vision-v1",
+          "status": "SUCCEEDED",
+          "confidence": 0.78,
+          "input_tokens": 3813,
+          "output_tokens": 729,
+          "total_tokens": 4542,
+          "estimated_cost_usd": null,
+          "error_message": null,
+          "started_at": "2026-09-16T15:57:46.507704+00:00",
+          "cached_input_tokens": 0,
+          "cache_write_tokens": 3810,
+          "pricing": null,
+          "response_id": "resp_0882737fdf1d7a0f016aaabc7d764487d0aacb3ad01f71d14c",
+          "returned_model": "gpt-5.6-sol",
+          "latency_ms": 15879
+        }
+      ],
+      "width": 5118,
+      "height": 7677,
+      "format": "JPEG",
+      "prompt_version": "vision-v1",
+      "processed_dimensions": [
+        1600,
+        2400
+      ],
+      "processed_sha256": "309c0a5720690a8492cbef62058ea1f45405873df5b009b947310d1bb58d23f3",
+      "processed_bytes": 954120,
+      "image_bytes_verified_in_request": true,
+      "http_status": 200,
+      "analysis": {
+        "summary": "Two workers are visibly wearing hard hats; one also wears a high-visibility vest. Neither worker appears to be wearing eye protection, although the activity shown does not establish whether eye protection is required.",
+        "hazards": [
+          {
+            "hazard_type": "missing_ppe",
+            "title": "Eye protection not visibly worn",
+            "description": "Neither worker appears to have safety eyewear over their eyes. Clear protective glasses are visibly hanging from the worker on the right, but the image does not show an active task or exposure that confirms eyewear is required at this moment.",
+            "visual_evidence": [
+              "Both workers' faces and eyes are clearly visible without eyewear being worn.",
+              "A pair of clear glasses appears to hang from the clothing of the worker on the right.",
+              "The workers appear to be reviewing a clipboard and handheld device rather than performing a visibly hazardous operation."
+            ],
+            "confidence": 0.78,
+            "severity": 2,
+            "exposure": 2,
+            "probability": 2,
+            "risk_score": 8,
+            "risk_level": "LOW",
+            "recommended_actions": [
+              "Confirm the site's eye-protection requirements for this area and activity.",
+              "Wear suitable safety eyewear if required by the task or designated work-zone rules."
+            ],
+            "regulation_queries": [
+              "construction site eye protection requirements",
+              "PPE hazard assessment for safety eyewear"
+            ]
+          }
+        ],
+        "overall_confidence": 0.78,
+        "requires_human_review": true,
+        "reasoning_notes": [
+          "The foreground is clear, but the background and wider work area are blurred.",
+          "The image does not reveal nearby airborne-particle, chemical, or impact exposure, so the need for eye protection cannot be confirmed visually.",
+          "No supported working-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard is visible in the image.",
+          "Overall visual confidence below 0.85. Human review required.",
+          "The model reports ambiguous visual evidence. Human review required.",
+          "Eye protection not visibly worn: Uncertain visual evidence (confidence below 0.85). Human review required."
+        ],
+        "provenance": null
+      },
+      "structured_output_valid": true,
+      "risk_engine_verified": true,
+      "risk_breakdowns": [
+        {
+          "severity": 2,
+          "exposure": 2,
+          "probability": 2,
+          "raw_score": 8,
+          "final_score": 8,
+          "risk_level": "LOW",
+          "confidence": 0.78,
+          "requires_human_review": true,
+          "policy_version": "safety-policy-1.0",
+          "overrides": [],
+          "formula": "Severity \u00d7 Exposure \u00d7 Probability (maximum 5 \u00d7 5 \u00d7 4 = 100). Confidence never discounts risk."
+        }
+      ],
+      "raw_observations": {
+        "summary": "Two workers are visibly wearing hard hats; one also wears a high-visibility vest. Neither worker appears to be wearing eye protection, although the activity shown does not establish whether eye protection is required.",
+        "hazards": [
+          {
+            "severity": 2,
+            "exposure": 2,
+            "probability": 2,
+            "hazard_type": "missing_ppe",
+            "title": "Eye protection not visibly worn",
+            "description": "Neither worker appears to have safety eyewear over their eyes. Clear protective glasses are visibly hanging from the worker on the right, but the image does not show an active task or exposure that confirms eyewear is required at this moment.",
+            "visual_evidence": [
+              "Both workers' faces and eyes are clearly visible without eyewear being worn.",
+              "A pair of clear glasses appears to hang from the clothing of the worker on the right.",
+              "The workers appear to be reviewing a clipboard and handheld device rather than performing a visibly hazardous operation."
+            ],
+            "confidence": 0.78,
+            "recommended_actions": [
+              "Confirm the site's eye-protection requirements for this area and activity.",
+              "Wear suitable safety eyewear if required by the task or designated work-zone rules."
+            ],
+            "regulation_queries": [
+              "construction site eye protection requirements",
+              "PPE hazard assessment for safety eyewear"
+            ]
+          }
+        ],
+        "overall_confidence": 0.78,
+        "requires_human_review": true,
+        "ambiguity_detected": true,
+        "reasoning_notes": [
+          "The foreground is clear, but the background and wider work area are blurred.",
+          "The image does not reveal nearby airborne-particle, chemical, or impact exposure, so the need for eye protection cannot be confirmed visually.",
+          "No supported working-at-height, unprotected-edge, scaffolding, electrical, or housekeeping hazard is visible in the image."
+        ]
+      },
+      "no_mock_fallback": true,
+      "elapsed_ms": 16449
+    }
+  ],
+  "env_unchanged": true,
+  "images_unchanged": true,
+  "completed_at": "2026-09-16T15:58:02.399993+00:00"
+}

@@ -1,0 +1,250 @@
+[
+  {
+    "case_id": "case_001",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "provider_connection_failure",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "connection_error"
+  },
+  {
+    "case_id": "case_002",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "provider_connection_failure",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "connection_error"
+  },
+  {
+    "case_id": "case_003",
+    "ground_truth": [
+      "missing_ppe"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "provider_connection_failure",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "connection_error"
+  },
+  {
+    "case_id": "case_004",
+    "ground_truth": [
+      "working_at_height",
+      "unprotected_edge"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "provider_connection_failure",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "connection_error"
+  },
+  {
+    "case_id": "case_005",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_006",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_007",
+    "ground_truth": [
+      "missing_ppe"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_008",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_009",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_010",
+    "ground_truth": [
+      "working_at_height",
+      "unsafe_scaffolding"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_011",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_012",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_013",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_014",
+    "ground_truth": [
+      "missing_ppe"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_015",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_016",
+    "ground_truth": [
+      "housekeeping"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_017",
+    "ground_truth": [
+      "housekeeping"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_018",
+    "ground_truth": [],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_019",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  },
+  {
+    "case_id": "case_020",
+    "ground_truth": [
+      "working_at_height"
+    ],
+    "prediction": null,
+    "visual_evidence": null,
+    "false_positive_classes": null,
+    "false_negative_classes": null,
+    "likely_error_category": "not_attempted_after_stop",
+    "explanation": "No model prediction exists; cannot attribute a visual recognition error.",
+    "provider_error": "not_attempted_after_stop"
+  }
+]

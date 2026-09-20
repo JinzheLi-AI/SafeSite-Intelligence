@@ -1,0 +1,13 @@
+{
+  "result_json_valid": true,
+  "offline_report_regeneration_identical": true,
+  "report_sha256": {
+    "metrics.json": "4e24c90c3373d4169aa76fa2a053d9a560db34383718db22c17dad61e0f20bfa",
+    "case_errors.json": "ae6fe81cd5e97bbae1631b622f44c7f16578796cbf7813ac47ccfceed65b0cfb",
+    "summary.md": "92e6429939b9de450357483d9b300f5e04cdae57cd686ed1674745b06c1a79aa"
+  },
+  "historical_summary_fields_preserved": true,
+  "additional_api_calls": 0,
+  "tests_passed": 147,
+  "test_warnings": 2
+}
