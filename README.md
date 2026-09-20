@@ -46,7 +46,16 @@ Credentials, databases, uploads, downloaded PDFs/model weights, caches and insta
 
 ## Installation and startup
 
-Verified local toolchain: Python 3.12.13, Node.js 24.18.0 and npm. Dependency installation requires internet access. Start from your checkout root. Do not overwrite existing environment files.
+Requirements: Git, Python 3.12 (with the Windows `py` launcher), Node.js and npm. Verified local toolchain: Python 3.12.13 and Node.js 24.18.0. Dependency installation requires internet access unless all locked packages are already cached. If `py` is unavailable, install the Python launcher or use the full path to your Python 3.12 executable in the virtual-environment command. Do not overwrite existing environment files.
+
+Clone the source, then open two PowerShell terminals in the new checkout root:
+
+```powershell
+git clone https://github.com/JinzheLi-AI/SafeSite-Intelligence.git
+Set-Location SafeSite-Intelligence
+```
+
+**Fresh-install verification limit:** A fresh backend dependency installation has not been fully verified. The published source passed 31 backend workflow tests using an existing Python 3.12 environment; an offline fresh-install attempt could not resolve packages because its wheel cache was empty. Frontend dependencies installed from the local npm cache, and two mock browser tests passed. These checks do not establish a fully fresh online installation.
 
 ### Windows PowerShell: backend
 
@@ -59,6 +68,8 @@ if (-not (Test-Path .env)) { Copy-Item .env.example .env }
 ```
 
 The example selects mock vision and deterministic analytics; no model key is needed. Startup initializes SQLite and idempotent demo seed data. Relative backend paths are `data/safesite.db` and `uploads/`.
+
+Use a fresh terminal without inherited live-provider settings: environment variables override `.env`. Before the walkthrough, check the health URL below and confirm **both vision and reinspection report `provider: mock` and `ready: true`**. Leave API keys blank. Stop if a live provider is reported.
 
 ### Windows PowerShell: frontend, second terminal
 
@@ -81,7 +92,38 @@ On macOS/Linux, use `python3.12 -m venv .venv`, `.venv/bin/python -m pip install
 
 After dependencies are installed, run `scripts/start_day1_backend.ps1` from the project root. In another terminal, build the frontend with `NEXT_PUBLIC_API_URL=http://127.0.0.1:8002/api/v1`, then run `scripts/start_day1_frontend.ps1`. The launchers use ports 8002/3002, mock providers and a separate Day 1 database/upload directory. Use `-Development` on the frontend launcher instead when a production build is not prepared.
 
+Exact alternative commands, each starting at the checkout root:
+
+```powershell
+# Terminal 1
+.\scripts\start_day1_backend.ps1
+```
+
+```powershell
+# Terminal 2: development mode needs no prebuilt bundle
+.\scripts\start_day1_frontend.ps1 -Development
+```
+
+Open http://127.0.0.1:3002/ for this alternative; check http://127.0.0.1:8002/api/v1/health. Do not run dev and production processes against the same frontend build directory simultaneously.
+
 The [demo script](docs/FINAL_DEMO_SCRIPT.md) describes the existing local-fixture walkthrough. Substitute your checkout root for historical computer-specific paths. Photo-based helpers/browser tests require the documented permitted fixtures restored locally. The normal application accepts your own permitted photographs; mock mode still returns fixed demo findings rather than interpreting them.
+
+### Complete mock workflow using a bundled, approved image
+
+This walkthrough needs no API keys, regulatory index or excluded pilot photographs. Use EN in the interface so the button names match below. It works with either startup option above.
+
+1. Open Dashboard, then **New AI inspection**.
+2. Upload `evaluation/fixtures/vision_v2/development/fbfd230b416044a7919c81f26bf501e8867a90ff9b24be50a4bf0f6cfa54ebdf.jpg` from this checkout.
+3. Click **Analyze Site**. Confirm **DEMO AI**, **Human Review Required**, and **Demo regulation data**. Findings are fixed mock observations, not analysis of the photograph; risk is calculated by the deterministic policy.
+4. Click **Confirm Findings**, then **Open primary incident**. This human decision creates incidents; analysis alone does not.
+5. Click **Start Rectification** and complete every corrective-action checkbox.
+6. Select **Use simulated rectification evidence for this demo**, then **Run Reinspection**. This explicitly simulates evidence; do not describe it as a real repaired-site inspection.
+7. Confirm **Hazard Mitigated**. The incident remains open until a human clicks **Close Case**.
+8. Click **Close Case**, refresh, and inspect the closed status and **Case Closed By Human** audit entry. Other incidents created by the same inspection have their own workflows.
+
+The bundled photograph is by Marek Ślusarczyk (Tupungato), CC BY 3.0: [source](https://commons.wikimedia.org/?curid=134276899), [license](https://creativecommons.org/licenses/by/3.0/). Preserve attribution in recordings. File-specific credits are in [PUBLICATION_MEDIA.json](docs/PUBLICATION_MEDIA.json).
+
+The older demo script's **Scenario B** and tests using `evaluation/fixtures/live_smoke/` are not reproducible from this release alone: those photographs were intentionally withheld. Do not run the uncertainty helper expecting that image to be bundled. No screenshots are included because their redistribution/privacy review remains unresolved; do not add the excluded screenshots to remedy this.
 
 ## Configuration and real inference
 
@@ -152,4 +194,4 @@ Publication copies redact local user paths and reviewer identities; labels, scor
 
 No project-wide open-source license has been selected by the owner; no MIT/Apache grant is invented. Dependencies and external content retain their own licenses. Lockfiles are included; installed dependencies/model weights are excluded. See [third-party review](docs/THIRD_PARTY_MATERIALS.md).
 
-Publication remains subject to explicit owner approval of the inventory/exclusions. No hosted deployment or confirmed GitHub publication is claimed. Keep credentials, private uploads, databases and traces out of Git. The offline `scripts/prepare_publication.py` prepares an audited proposal under ignored `.publication/`; it never uploads or calls a model. See [publication review](docs/PUBLICATION_REVIEW.md).
+The approved sanitized source is published at [JinzheLi-AI/SafeSite-Intelligence](https://github.com/JinzheLi-AI/SafeSite-Intelligence). This is a source-code repository, not a hosted application. Earlier publication-review documents retain their historical proposal wording. Keep credentials, private uploads, databases and traces out of Git. The offline `scripts/prepare_publication.py` prepares an audited proposal under ignored `.publication/`; it never uploads or calls a model. See [publication review](docs/PUBLICATION_REVIEW.md).
